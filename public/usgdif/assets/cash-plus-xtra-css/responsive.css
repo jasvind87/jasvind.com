@@ -1,0 +1,686 @@
+/*
+Responsive CSS
+============================*/
+@media only screen and (max-width: 767px) {
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .default-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .logo {
+	width: 180px;
+  }
+  .section-title {
+    margin-bottom: 20px;
+	margin-top:20px;
+  }
+  .section-title h2 {
+    font-size: 26px;
+  }
+  .navbar-light .navbar-nav {
+    margin-top: 14px;
+  }
+  .navbar-light .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .navbar-light .navbar-nav .nav-item a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-light .others-option .option-item .default-btn {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .main-banner {
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .main-banner .banner-content {
+    text-align: center;
+  }
+  .main-banner .banner-content h1 {
+    font-size: 40px;
+  }
+  .main-banner .banner-content .banner-holder {
+    margin-top: 20px;
+  }
+  .main-banner .banner-content .banner-holder img {
+    max-width: 45%;
+  }
+  .main-banner .banner-image {
+    margin-top: 50px;
+  }
+  .main-banner .banner-form {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .default-shape .shape-1 {
+    display: none;
+  }
+  .default-shape .shape-2 {
+    display: none;
+  }
+  .default-shape .shape-3 {
+    display: none;
+  }
+  .default-shape .shape-4 {
+    display: none;
+  }
+  .default-shape .shape-5 {
+    display: none;
+  }
+  .single-fun-fact .icon i {
+    font-size: 40px;
+  }
+  .single-fun-fact h3 {
+    font-size: 30px;
+  }
+  .about-content h3 {
+    font-size: 24px;
+  }
+  .about-content .about-btn {
+    margin-top: 20px;
+  }
+  .about-image {
+    margin-top: 0px;
+  }
+  .about-image-personnel {
+	margin: 0 auto;
+	width: 75%;
+	text-align: center;
+  }
+  .single-features h3 {
+    font-size: 22px;
+  }
+  .testimonial-slides .client-feedback .single-feedback {
+    margin-bottom: 20px;
+  }
+  .testimonial-slides .client-feedback .single-feedback p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .testimonial-slides .client-feedback .single-feedback .icon i {
+    font-size: 40px;
+    margin-bottom: 14px;
+  }
+  .testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+  .overview-content h3 {
+    font-size: 24px;
+  }
+  .overview-content .overview-btn {
+    margin-top: 20px;
+  }
+  .overview-image {
+    margin-top: 30px;
+  }
+  .single-pricing-table .pricing-header h3 {
+    font-size: 26px;
+  }
+  .single-pricing-table .price {
+    font-size: 35px;
+  }
+  .single-pricing-table .price sup {
+    top: -4px;
+  }
+  .faq-image {
+    margin-top: 30px;
+  }
+  .single-team .image .content h3 {
+    font-size: 22px;
+  }
+  .app-download-content h3 {
+    font-size: 30px;
+  }
+  .app-holder img {
+    max-width: 45%;
+  }
+  .single-blog .content h3 {
+    font-size: 22px;
+  }
+  .single-blog .content .post-meta li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .contact-info .contact-info-content {
+    margin-top: 30px;
+  }
+  .contact-info .contact-info-content h3 {
+    font-size: 20px;
+  }
+  .subscribe-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .newsletter-form .input-newsletter {
+    height: 55px;
+  }
+  .newsletter-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 55px;
+    margin-top: 20px;
+  }
+  .pl-5, .px-5 {
+    padding-left: 0 !important;
+  }
+  .single-footer-widget h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .main-banner-two {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .main-banner-two .banner-content h1 {
+    font-size: 35px;
+  }
+  .main-banner-two .banner-content .banner-form .input-newsletter {
+    height: 55px;
+  }
+  .main-banner-two .banner-content .banner-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 55px;
+    margin-top: 20px;
+  }
+  .video-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .video-content h3 {
+    font-size: 25px;
+  }
+  .video-content .video-btn {
+    width: 60px;
+    height: 60px;
+    line-height: 75px;
+  }
+  .page-title-area {
+    height: 220px;
+  }
+  .page-title-content h2 {
+    font-size: 30px;
+  }
+  .pagination-area .page-numbers {
+    width: 35px;
+  }
+  .blog-details-desc .article-content h3 {
+    font-size: 22px;
+  }
+  .comments-area .comment-body {
+    padding-left: 60px;
+  }
+  .comments-area .comments-title {
+    font-size: 22px;
+  }
+  .comments-area .comment-author .avatar {
+    height: 50px;
+    width: 50px;
+    left: -65px;
+  }
+  .comments-area .comment-respond .comment-reply-title {
+    font-size: 22px;
+  }
+  .widget-area .widget:first-child {
+    margin-top: 30px;
+  }
+  blockquote, .blockquote {
+    padding: 25px !important;
+  }
+  blockquote p, .blockquote p {
+    font-size: 16px !important;
+  }
+  .cursor {
+    height: 35px;
+  }
+  .right-by-you {
+    display: none;
+  }
+  .youtube-image {
+    height: 219px;
+	margin-bottom: 30px;
+  }
+   .advisory-fees-banner-col-side{
+	width: 16.66666667%;
+	flex: 0 0 auto;
+}
+   .advisory-fees-banner-col-middle{
+	width: 66.66666667%;
+	flex: 0 0 auto;	
+}
+  .fa-quote-left {
+    font-size: 1.4rem;
+    margin-left: 0px;
+  }
+  .testimonial-content p {
+    font-size: 17px;
+  }
+  .testimonial-content-black p {
+    font-size: 2rem;
+  }
+	.main-banner .banner-content .banner-content-highlight p {
+		font-size: 12px;
+	}
+	.advisory-fees-banner-header {
+		font-size: 15px;
+	}
+	.advisory-fees-banner-description{
+		font-size: 11px;
+		margin-bottom: 4px;
+	}
+	.advisory-fees-banner-terms{
+		font-size: 9px;
+		padding-bottom: 10px;
+	}
+	#about-cashxtra .container .col-lg-6 {
+		padding-bottom: 15px;
+		text-align: left;
+	}
+	#fund-description .container .col-lg-6 {
+		text-align: left;
+	}
+	.main-banner .singpass-image-right {
+		text-align: center;
+	}
+	.singpass-padding-right {
+		padding-right: 0;
+	}
+	.uobam-padding-left {
+		padding-left: 0;
+	}
+	.uobam-app-image img {
+		width: 95px;
+		padding-top: 35px;
+	}
+	.appstore-image-left img {
+		width: 150px;
+	}
+	.main-banner .appstore-image-left {
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 35px;
+	}
+	.align-items-center {
+		text-align: center;
+	}
+	.cashplusfeatures-contentleft {
+		text-align: center;
+	}
+	.cashplusfeatures-content {
+		padding-bottom: 35px;
+	}
+	#fund-description table {
+		font-size: 14px;
+		width: 100%;
+	}
+	#fund-description .icon-sizes {
+		padding: 0 20px 35px 0px;
+	}
+	.funding-options {
+		padding-left: 0;
+		padding-top: 35px;
+	}
+	#getstarted h2 {
+		font-size: 43px;
+	}
+	.get-started-promo-text {
+		line-height: 1.5;
+		font-size: 16px;
+	}
+	.get-started-create-account h3 {
+		font-size: 25px;
+	}
+	.youtube-account-open {
+		height: 189px;
+	}
+	.faq-accordion-content {
+		text-align: left;
+	}
+	.spacing-mobile {
+		padding-bottom: 35px;
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.cashplus-points {
+		padding-top: 50px;
+		text-align: left;
+	}
+	.uobam-app-logo {
+	    width: 50px;
+}
+    .appstore-logo, .playstore-logo {
+	    width: 135px;
+}
+	.testimonial-content{
+		text-align: left;
+	}
+	.text {
+		font-size: 17px;
+	}
+	.cashplus-allocation-caption {
+		font-size: 12px;
+		padding-bottom: 30px;
+	}
+	.cashplus-allocation-legend {
+		font-size: 12px;
+	}
+	.faq-accordion-content .accordion .accordion-content {
+		font-size: 12px;
+	}
+	  .faq-accordion-content .accordion .accordion-title {
+        font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pt-100 {
+    padding-top: 80px;
+  }
+  .pb-70 {
+    padding-bottom: 50px;
+  }
+  .ptb-100 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+  .default-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .section-title {
+    margin-bottom: 28px;
+  }
+  .section-title h2 {
+    font-size: 40px;
+  }
+  .navbar-light .navbar-nav {
+    margin-top: 14px;
+  }
+  .navbar-light .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .navbar-light .navbar-nav .nav-item a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .navbar-light .others-option .option-item .default-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .main-banner {
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  .main-banner .banner-content {
+    text-align: center;
+  }
+  .main-banner .banner-content h1 {
+    font-size: 115px;
+  }
+  .main-banner .banner-content .banner-holder {
+    margin-top: 20px;
+  }
+  .main-banner .banner-content .banner-holder img {
+    max-width: 45%;
+  }
+  .main-banner .banner-image {
+    margin-top: 50px;
+  }
+  .main-banner .banner-form {
+    margin-top: 30px;
+  }
+  .single-fun-fact .icon i {
+    font-size: 50px;
+  }
+  .single-fun-fact h3 {
+    font-size: 40px;
+  }
+  .about-content h3 {
+    font-size: 34px;
+  }
+  .about-content .about-btn {
+    margin-top: 20px;
+  }
+  .about-image {
+    margin-top: 30px;
+  }
+ .about-image-personnel {
+    margin-top: 30px;
+	width: 95%;
+  }
+  .single-features h3 {
+    font-size: 25px;
+  }
+  .testimonial-slides .client-feedback .single-feedback {
+    margin-bottom: 20px;
+  }
+  .testimonial-slides .client-feedback .single-feedback p {
+    max-width: 100%;
+    font-size: 20px;
+  }
+  .testimonial-slides .client-feedback .single-feedback .icon i {
+    font-size: 40px;
+    margin-bottom: 14px;
+  }
+  .testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
+    opacity: 1;
+    visibility: visible;
+  }
+  .overview-content h3 {
+    font-size: 34px;
+  }
+  .overview-content .overview-btn {
+    margin-top: 20px;
+  }
+  .overview-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .single-pricing-table .pricing-header h3 {
+    font-size: 35px;
+  }
+  .single-pricing-table .price {
+    font-size: 45px;
+  }
+  .single-pricing-table .price sup {
+    top: -4px;
+  }
+  .faq-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .app-download-content h3 {
+    font-size: 40px;
+  }
+  .app-holder img {
+    max-width: 45%;
+  }
+  .single-blog .content h3 {
+    font-size: 25px;
+  }
+  .single-blog .content .post-meta li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .contact-info .contact-info-content {
+    margin-top: 30px;
+  }
+  .contact-info .contact-info-content h3 {
+    font-size: 30px;
+  }
+  .subscribe-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .newsletter-form .input-newsletter {
+    height: 55px;
+  }
+  .newsletter-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 55px;
+    margin-top: 20px;
+  }
+  .pl-5, .px-5 {
+    padding-left: 0 !important;
+  }
+  .single-footer-widget h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+  .widget-area .widget:first-child {
+    margin-top: 30px;
+  }
+  .cursor {
+    height: 40px;
+  }
+  .right-by-you {
+    width: 100px;
+  }
+  .youtube-image {
+    height: 391px;
+	margin-bottom: 30px;
+  }
+  .fa-quote-left {
+    font-size: 2rem;
+  }
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+  .testimonial-content-black p {
+    font-size: 1.7rem;
+  }
+	.main-banner .singpass-image-right {
+		text-align: center;
+	}
+	.singpass-padding-right {
+		padding-right: 0px;
+	}
+	.appstore-image-left img {
+	width: 175px;
+}
+	.main-banner .logos-fluid {
+		padding-bottom: 35px;
+	}
+	.main-banner .appstore-image-left{
+		margin-bottom: 15px;
+	}
+  .youtube-account-open {
+	height: 390px;
+  }
+	#getstarted h2 {
+		font-size: 50px;
+	}
+	#about-cashxtra .container {
+		text-align: center;
+	}
+	#about-cashxtra .container .col-lg-6 {
+		padding-bottom: 60px;
+		text-align: left;
+	}
+	#about-cashxtra h2 {
+		font-size: 40px;
+	}
+	.list-alignment {
+		text-align: left;
+	}
+	.advisory-fees-banner-header{
+		font-size: 28px;
+	}
+	#fund-description .icon-sizes{
+		padding: 0 20px 80px 0px;
+	}
+	.funding-options {
+		padding-left: 0px;
+	}
+	.cashplusfeatures-content h5 {
+	font-size: 1.1rem;
+    }
+	#fund-description table {
+		width: 696px;
+	}
+	.faq-accordion-content .accordion .accordion-title {
+    font-size: 16px;
+  }
+	.testimonial-name {
+		font-size: 16px;
+	}
+	.cashplusfeatures p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-fun-fact p {
+    font-size: 16px;
+  }
+  .faq-accordion-content .accordion .accordion-title {
+    font-size: 18px;
+  }
+  .single-blog .content .post-meta li {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .single-blog .content h3 {
+    font-size: 22px;
+  }
+  .cursor {
+    height: 50px;
+  }
+  .right-by-you {
+    width: 120px;
+  }
+  .youtube-image {
+    height: 257px; 	
+  }
+  .about-image-personnel {
+	width: 90%;
+  }
+  .fa-quote-left {
+    font-size: 2.5rem;
+  }
+  .testimonial-content p {
+    font-size: 22px;
+	line-height: 1.5;
+  }
+  .testimonial-content-black p {
+    font-size: 2.3rem;
+  }
+  .youtube-account-open {
+	height: 525px;
+  }
+  .main-banner .banner-content h3 {
+	font-size: 1.6rem;	
+  }
+  .main-banner .banner-content h1 {
+	font-size: 5.4rem;	
+  }
+  .main-banner .banner-content .banner-content-highlight p {
+	font-size: 18px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
