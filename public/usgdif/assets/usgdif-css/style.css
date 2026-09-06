@@ -32,7 +32,6 @@ html {
   scroll-padding-top: 200px; /* height of your floating nav bar */
   scroll-behavior: smooth; /* optional, for nicer motion */
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -142,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 1px;
 }
 .logo {
-	width: 300px;
+  width: 300px;
 }
 .section-title {
   text-align: center;
@@ -401,8 +400,8 @@ Navbar Area CSS
   display: block;
 }
 .right-by-you {
-	margin-left: 20px;
-	width: 120px;
+  margin-left: 20px;
+  width: 120px;
 }
 /*================================================
 Banner Area CSS
@@ -435,14 +434,12 @@ Banner Area CSS
   text-shadow: 2px 2px 5px #000;
   font-weight: 700;
 }
-
 .main-banner .banner-content h3 {
   font-size: 2.2rem;
   color: #FFF;
   text-shadow: 2px 2px 5px #000;
   font-weight: 500;
 }
-
 .main-banner .banner-content p {
   margin-bottom: 0;
   color: #646464;
@@ -459,7 +456,7 @@ Banner Area CSS
   margin-right: 0;
 }
 .banner-holder p {
-	color: #FFF;
+  color: #FFF;
 }
 .main-banner .banner-content .banner-btn {
   margin-top: 30px;
@@ -470,19 +467,19 @@ Banner Area CSS
 .main-banner .singpass-image-right {
   text-align: right;
 }
-.main-banner .singpass-image-right p{
+.main-banner .singpass-image-right p {
   color: #FFF;
 }
 .main-banner .uobam-image-center {
   text-align: center;
 }
-.main-banner .uobam-image-center p{
+.main-banner .uobam-image-center p {
   color: #FFF;
 }
 .main-banner .appstore-image-left {
   text-align: left;
 }
-.main-banner .appstore-image-left p{
+.main-banner .appstore-image-left p {
   color: #FFF;
 }
 .main-banner .banner-form {
@@ -1358,7 +1355,7 @@ Faq Area CSS
   display: block;
 }
 .faq-accordion-content .accordion .accordion-content li {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 /*================================================
 Team Area CSS
@@ -1492,7 +1489,7 @@ Team Area CSS
 App Download Area CSS
 =================================================*/
 .liquidity-image {
-  background-image: url(../../assets/images-n/liquidity.webp);	
+  background-image: url(../../assets/images-n/liquidity.webp);
 }
 .app-download-image {
   background-image: url(../../assets/images-n/app-download-background.webp);
@@ -2376,106 +2373,96 @@ Go Top CSS
   visibility: visible;
   top: 50%;
 }
-
 /*================================================
 Stripe Pattern
 =================================================*/
 .striped-pattern {
-    /* Adjust the height as needed */
-    height: 25px;
-    
-    /* Create a linear gradient with stripes */
-    background-image: repeating-linear-gradient(
-      135deg,
-      #f4f4f4,  /* Color of the stripe */
-      #f4f4f4 10px,  /* Width of the stripe */
-      #bebebe 10px,  /* Color of the space between stripes */
-      #bebebe 20px  /* Width of the space */
+  /* Adjust the height as needed */
+  height: 25px;
+  /* Create a linear gradient with stripes */
+  background-image: repeating-linear-gradient(135deg, #f4f4f4, /* Color of the stripe */ #f4f4f4 10px, /* Width of the stripe */ #bebebe 10px, /* Color of the space between stripes */ #bebebe 20px /* Width of the space */
     );
-    
-    /* If you want the stripes to cover the entire width of the page */
-    width: 100%;
-	margin: 0 auto;
-  }
+  /* If you want the stripes to cover the entire width of the page */
+  width: 100%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
 .youtube-image {
-    height: 360px; 	
+  height: 360px;
 }
-
 .background-grey {
-	background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
 .border-right {
-	border-right: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 .singpass-padding-right {
-	padding-right: 25px;
+  padding-right: 25px;
 }
 .uobam-padding-left {
-	padding-left: 25px;
+  padding-left: 25px;
 }
-#about-cashxtra h2{
-	font-weight: 300;
+#about-cashxtra h2 {
+  font-weight: 300;
 }
-#fund-description h2{
-	font-weight: 300;
+#fund-description h2 {
+  font-weight: 300;
 }
-#fund-description h3{
-	font-weight: 300;
-	font-size: 25px;
+#fund-description h3 {
+  font-weight: 300;
+  font-size: 25px;
 }
-#getstarted h2{
-	font-weight: 300;
-	font-size: 50px;
+#getstarted h2 {
+  font-weight: 300;
+  font-size: 50px;
 }
-#getstarted h4{
-	font-weight: 300;
-	font-size: 25px;
+#getstarted h4 {
+  font-weight: 300;
+  font-size: 25px;
 }
-
-#getstarted .section-title p{
-	font-size: 19px;
+#getstarted .section-title p {
+  font-size: 19px;
 }
 .color-5c55eb {
-	color: #5c55eb;
+  color: #5c55eb;
 }
 .color-bbaeff {
-	color: #bbaeff;
+  color: #bbaeff;
 }
 .color-55c270 {
-	color: #55c270;
+  color: #55c270;
 }
-.color-0053af{
-	color: #0053af;
+.color-0053af {
+  color: #0053af;
 }
-.color-009790{
-	color: #009790;
+.color-009790 {
+  color: #009790;
 }
 .advisory-fees-banner {
-	background-color: #5c55eb;
-	border-radius: 15px;
+  background-color: #5c55eb;
+  border-radius: 15px;
 }
 .advisory-fees-banner-header {
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 45px;
-	padding-top: 15px;
-	margin-bottom: 0px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 15px;
+  margin-bottom: 0px;
 }
 .advisory-fees-banner-description {
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
 }
 .advisory-fees-banner-terms {
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 15px;
-	padding-bottom: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 30px;
 }
 .advisory-fees-banner-container {
-	width: 950px;
-	max-width: 100%;
+  width: 950px;
+  max-width: 100%;
 }
 .client-testimonial {
   background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
@@ -2539,51 +2526,51 @@ Stripe Pattern
   color: #FFF;
 }
 .get-started-downoad-logo {
-	padding-top: 20px;
+  padding-top: 20px;
 }
-.get-started-promo-text{
-	padding-top: 45px;
-	font-weight: 300;
-	line-height: 2.5;
-	font-size: 20px;
-	text-align: center;
+.get-started-promo-text {
+  padding-top: 45px;
+  font-weight: 300;
+  line-height: 2.5;
+  font-size: 20px;
+  text-align: center;
 }
 .get-started-create-account {
   text-align: center;
   margin-bottom: 40px;
   font-size: 50px;
 }
-.get-started-create-account h3{
+.get-started-create-account h3 {
   font-size: 30px;
   font-weight: 300;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 #getstarted {
-	background-color: #f2f5ff;
+  background-color: #f2f5ff;
 }
-#fund-description table{
-	width: 500px; 
-	max-width: 100%; 
-	line-height: 2; 
-	margin-bottom: 40px; 
-	font-size: 17px;
+#fund-description table {
+  width: 500px;
+  max-width: 100%;
+  line-height: 2;
+  margin-bottom: 40px;
+  font-size: 17px;
 }
 #fund-description .icon-sizes {
-	font-size: 50px;
-	padding: 0 20px 80px 100px;
+  font-size: 50px;
+  padding: 0 20px 80px 100px;
 }
 .maxDrawdown {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .funding-options {
-	margin-top: 40px;
+  margin-top: 40px;
 }
-.funding-options img{
-	padding-bottom: 20px;
+.funding-options img {
+  padding-bottom: 20px;
 }
-.funding-options p{
-	padding-bottom: 20px;
+.funding-options p {
+  padding-bottom: 20px;
 }
 .cashplusfeatures {
   background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
@@ -2603,73 +2590,103 @@ Stripe Pattern
   width: 100%;
   height: 100%;
 }
-.cashplusfeatures h3,h4,h5{
-	color: #FFF;
+.cashplusfeatures h3, h4, h5 {
+  color: #FFF;
 }
 .cashplusfeatures h3 {
-	margin: 20px 0 30px 0;
-	font-size: 25px;
-	font-weight: 300;
+  margin: 20px 0 30px 0;
+  font-size: 25px;
+  font-weight: 300;
 }
 .cashplusfeatures h4 {
-	text-align: center;
-	font-size: 30px;
-	margin: 20px 0 40px 0;
-	border: 1px solid;
-	padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px 0 40px;
+  padding: 12px 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0.03) 100%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 16px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(255, 255, 255, 0.1);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
 }
-.cashplusfeatures p{
-	color: #FFF;
-	font-size: 17px;
+.cashplusfeatures h4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.10) 25%, transparent 55%);
+}
+.cashplusfeatures h4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 55%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
+  filter: blur(0.3px);
+}
+.cashplusfeatures p {
+  color: #FFF;
+  font-size: 17px;
 }
 .cashplusfeatures-content {
-	padding-bottom: 80px;
-	text-align: center;
+  padding-bottom: 80px;
+  text-align: center;
 }
-.cashplusfeatures-contentleft{
-	text-align: left;
+.cashplusfeatures-contentleft {
+  text-align: left;
 }
 .cashplusfeatures-content h5 {
-	font-size: 2rem;
-	font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 }
 .cashplusfeatures-contentleft h5 {
-	font-size: 1.5rem;
-	font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .cashplusfeatures-content img {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-.cashplus-allocation-caption{
-	text-align: center;
+.cashplus-allocation-caption {
+  text-align: center;
 }
 .appstore-image-left img {
-	width: 200px;
+  width: 200px;
 }
 .uobam-app-image img {
-	width: 140px;
+  width: 140px;
 }
 #about-cashxtra .container .col-lg-6 {
-	padding-bottom: 100px;
-	}
+  padding-bottom: 100px;
+}
 .middle-image {
-	text-align: center;
-	padding: 35px 0;
+  text-align: center;
+  padding: 35px 0;
 }
 .open-account {
-	font-size: 12.7px;
+  font-size: 12.7px;
 }
 .cashplusfeatures .illustrations {
-	font-size: 12px;
-	padding-top: 15px;
+  font-size: 12px;
+  padding-top: 15px;
 }
 .uobam-app-logo {
-	width: 100px;
+  width: 100px;
 }
 .appstore-logo, .playstore-logo {
-	width: 200px;
+  width: 200px;
 }
-
 .benefit-icon {
   width: 100%;
   max-width: 150px;
@@ -2677,48 +2694,227 @@ Stripe Pattern
   object-fit: contain;
   margin-bottom: 20px;
 }
-
 .benefit-text {
   font-size: 17px;
   line-height: 1.25;
   text-align: center;
 }
-
 .youtube-account-open {
-	width: 100%;
-	height: 730px;
+  width: 100%;
+  height: 730px;
 }
 
+/*Start Card */
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px
+  gap: 24px;
 }
-.card {
-  background: #fff;
-  border: 1px solid #DFE5EB;
-  border-radius: 10px;
-  padding: 26px
+
+/* Liquid glass cards */
+/* ==========================================================
+   REUSABLE LIQUID GLASS CARD
+   ========================================================== */
+
+.glass-card {
+  position: relative;
+  overflow: hidden;
+
+  height: 100%;
+  padding: 30px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.20) 0%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.38);
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.16),
+    inset 0 1px 1px rgba(255, 255, 255, 0.55),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
 }
-.card p:last-child {
-  margin-bottom: 0
+
+
+/* Soft reflected light */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at 10% 0%,
+      rgba(255, 255, 255, 0.32) 0%,
+      rgba(255, 255, 255, 0.10) 25%,
+      transparent 55%
+    );
 }
-.card .num {
+
+
+/* Highlight along upper glass edge */
+.glass-card::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 10%;
+  width: 55%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.95),
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+
+/* Keep text above reflections */
+.glass-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Icon container */
+.glass-card .num {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  border: 1px solid rgba(255, 255, 255, 0.32);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.45),
+    0 5px 15px rgba(0, 0, 0, 0.10);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: #fff;
+
   font-size: 13px;
   font-weight: 800;
-  color: #005eb8;
   letter-spacing: .1em;
-  margin-bottom: 10px
 }
-td.num,th.num{text-align:right;}
+
+
+/* Heading */
+.glass-card h3 {
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+
+/* Body */
+.glass-card p {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+}
+
+.glass-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Hover */
+.glass-card:hover {
+  transform: translateY(-5px);
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.11) 45%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.22),
+    inset 0 1px 1px rgba(255, 255, 255, 0.65),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.10);
+}
+
+
+/* Keep content above glass reflections */
+.grid-3 .card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.grid-3 .card p:last-child {
+  margin-bottom: 0;
+}
+
+.grid-3 .card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.grid-3 .card:hover {
+  transform: translateY(-5px);
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.11) 45%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
+  border-color: rgba(255, 255, 255, 0.55);
+
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.22),
+    inset 0 1px 1px rgba(255, 255, 255, 0.65),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.10);
+}
+/*end card */
+td.num, th.num {
+  text-align: right;
+}
 #understand6percent h3 {
-	font-size: 22px;
+  font-size: 22px;
 }
 #understand6percent .card {
-	height: 100%;
+  height: 100%;
 }
 .sixPercentIllustrations {
-	margin-top: 40px
+  margin-top: 40px
 }
 /* callout boxes */
 .callout {
@@ -2744,12 +2940,11 @@ td.num,th.num{text-align:right;}
   display: block
 }
 .red {
-	color:#C40A1E;
+  color: #C40A1E;
 }
 .calloutParagraph {
-	color: #646464;
+  color: #646464;
 }
-
 /* tables */
 .tbl-scroll {
   overflow-x: auto;
@@ -2814,54 +3009,53 @@ caption, .tbl-note {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M6.5 6.5l7 7M13.5 6.5l-7 7' fill='none' stroke='%23B51A28' stroke-width='2.2' stroke-linecap='round'/></svg>")
 }
 .sixPercentSuitability {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .sixPercentSuitability h4 {
-	font-size: 24px;
-	color: #646464;
+  font-size: 24px;
+  color: #646464;
 }
 #getstarted .card {
-	height: 100%;
+  height: 100%;
 }
-#getstarted .card h3{
-	font-size: 18px;
+#getstarted .card h3 {
+  font-size: 18px;
 }
 .getStartedCards {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 #callToAction h1 {
-	text-align: center;
-	font-size: 17px;
-	color: #fff;
-	text-transform: uppercase;
-	margin-bottom: 20px;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 #callToAction h2 {
-	text-align: center;
-	font-size: 36px;
-	color: #fff;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
 }
 #callToAction h3 {
-	text-align: center;
-	font-size: 36px;
-	color: #fff;
-	margin-bottom: 20px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 #callToAction h4 {
-	text-align: center;
-	font-size: 25px;
-	color: #fff;
-	margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 50px;
 }
 #callToAction p {
-	text-align: center;
-	font-size: 17px;
-	color: #fff;
+  text-align: center;
+  font-size: 17px;
+  color: #fff;
 }
 /*================================================
 Image Selector for light and dark theme
-=================================================*/
-:root {
+=================================================*/ :root {
   --portfolio-allocation-src-light: url('../../assets/cash-plus-xtra-images/cashplus-xtra-portfolio-allocation-dark.webp');
   --portfolio-allocation-src-dark: url('../../assets/cash-plus-xtra-images/cashplus-xtra-portfolio-allocation-light.webp');
   --award1-src-light: url('../../assets/cash-plus-xtra-images/award-best-asset-light.webp');
@@ -2872,7 +3066,7 @@ Image Selector for light and dark theme
   --award3-src-dark: url('../../assets/cash-plus-xtra-images/award-best-robo-dark.webp');
 }
 .portfolio-allocation {
-  content: var(--portfolio-allocation-src-light);	
+  content: var(--portfolio-allocation-src-light);
 }
 .awards-selector-1 {
   content: var(--award1-src-light);
