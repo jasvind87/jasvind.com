@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jasvind-com",
+  "compatibility_date": "2026-09-06",
+  "assets": {
+    "directory": "./public/"
+  }
+}
