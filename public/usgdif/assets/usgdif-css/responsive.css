@@ -35,17 +35,38 @@ Responsive CSS
     padding-top: 40px;
     padding-bottom: 0px;
   }
+  .banner-content::before {
+  content: "";
+  position: absolute;
+
+  /* Your chosen wash size */
+  inset: 0;
+
+  z-index: -1;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,255,0.78) 0%,
+    rgba(255,255,255,0.48) 38%,
+    rgba(255,255,255,0.22) 58%,
+    rgba(255,255,255,0) 80%
+  );
+
+  filter: blur(14px);
+
+  pointer-events: none;
+}
   .main-banner .banner-content {
     text-align: center;
   }
   .main-banner .banner-content h1 {
-    font-size: 30px;
+    font-size: clamp(27px, calc(5.556vw + 7px), 30px);
   }
   .main-banner .banner-content h2 {
-    font-size: 1.4rem;
+    font-size: clamp(20px, 5.556vw, 23px);
   }
 	#home .card {
-		margin: 0 20px 20px 20px;
+		margin: 0 10px 20px 10px;
 	}
   .main-banner .banner-image {
     margin-top: 50px;
@@ -78,7 +99,7 @@ Responsive CSS
     padding-top: 35px;
   }
   .appstore-image-left img {
-    width: 150px;
+    width: clamp(135px, calc(37.037vw + 1.667px), 155px);
   }
   .main-banner .appstore-image-left {
     text-align: center;
