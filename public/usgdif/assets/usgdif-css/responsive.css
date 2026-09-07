@@ -2,8 +2,6 @@
 Responsive CSS
 ============================*/
 @media only screen and (max-width: 767px) {
-  
-  
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -16,11 +14,11 @@ Responsive CSS
     padding: 10px 20px;
   }
   .logo {
-	width: 180px;
+    width: 180px;
   }
   .section-title {
     margin-bottom: 20px;
-	margin-top:20px;
+    margin-top: 20px;
   }
   .section-title h2 {
     font-size: 26px;
@@ -28,8 +26,6 @@ Responsive CSS
   .navbar-light .navbar-nav {
     margin-top: 14px;
   }
-  
-  
   .navbar-light .others-option .option-item .default-btn {
     padding: 10px 10px;
     font-size: 14px;
@@ -43,170 +39,132 @@ Responsive CSS
     text-align: center;
   }
   .main-banner .banner-content h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
-  
-  
+  .main-banner .banner-content h2 {
+    font-size: 1.4rem;
+  }
+	#home .card {
+		margin: 0 20px 20px 20px;
+	}
   .main-banner .banner-image {
     margin-top: 50px;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   .testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
     opacity: 1;
     visibility: visible;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   .right-by-you {
     display: none;
   }
-  
-   
-   
-  
-  
-  
-	
-	
-	
-	#about-cashxtra .container .col-lg-6 {
-		padding-bottom: 15px;
-		text-align: left;
+  #about-cashxtra .container .col-lg-6 {
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  #fund-description .container .col-lg-6 {
+    text-align: left;
+  }
+  .main-banner .singpass-image-right {
+    text-align: center;
+  }
+  .singpass-padding-right {
+    padding-right: 0;
+  }
+  .uobam-padding-left {
+    padding-left: 0;
+  }
+  .uobam-app-image img {
+    width: 95px;
+    padding-top: 35px;
+  }
+  .appstore-image-left img {
+    width: 150px;
+  }
+  .main-banner .appstore-image-left {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 35px;
+  }
+	.border-right {
+	border-right: none;	
 	}
-	#fund-description .container .col-lg-6 {
-		text-align: left;
+  .hero-yield {
+    width: 280px;
+  }
+
+  .hero-yield::before {
+    inset: 0;
+  }
+
+  .yield-label {
+    font-size: 21px;
+  }
+	.yield-label {
+		margin-bottom: 90px;
 	}
-	.main-banner .singpass-image-right {
-		text-align: center;
-	}
-	.singpass-padding-right {
-		padding-right: 0;
-	}
-	.uobam-padding-left {
-		padding-left: 0;
-	}
-	.uobam-app-image img {
-		width: 95px;
-		padding-top: 35px;
-	}
-	.appstore-image-left img {
-		width: 150px;
-	}
-	.main-banner .appstore-image-left {
-		text-align: center;
-		padding-top: 10px;
-		padding-bottom: 35px;
-	}
-	.align-items-center {
-		text-align: center;
-	}
-	
-	.cashplusfeatures-content {
-		padding-bottom: 35px;
-	}
-	#fund-description table {
-		font-size: 14px;
-		width: 100%;
-	}
-	
-	.funding-options {
-		padding-left: 0;
-		padding-top: 35px;
-	}
-	#getstarted h2 {
-		font-size: 43px;
-	}
-	
-	.get-started-create-account h3 {
-		font-size: 25px;
-	}
-	.youtube-account-open {
-		height: 189px;
-	}
-	.faq-accordion-content {
-		text-align: left;
-	}
-	.spacing-mobile {
-		padding-bottom: 35px;
-		flex: 0 0 auto;
-		width: 50%;
-	}
-	.cashplus-points {
-		padding-top: 50px;
-		text-align: left;
-	}
-	.uobam-app-logo {
-	    width: 50px;
-}
-    .appstore-logo, .playstore-logo {
-	    width: 135px;
-}
-	
-	
-	
-	
-	.faq-accordion-content .accordion .accordion-content {
-		font-size: 12px;
-	}
-	  .faq-accordion-content .accordion .accordion-title {
-        font-size: 14px;
+  .yield-number-svg {
+    width: 120px;
+    height: 150px;
+  }
+
+  .four-base,
+  .four-trace {
+    font-size: 330px;
+  }
+  .yield-unit {
+    font-size: 34px;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .align-items-center {
+    text-align: center;
+  }
+  .cashplusfeatures-content {
+    padding-bottom: 35px;
+  }
+  #fund-description table {
+    font-size: 14px;
+    width: 100%;
+  }
+  .funding-options {
+    padding-left: 0;
+    padding-top: 35px;
+  }
+  #getstarted h2 {
+    font-size: 43px;
+  }
+  .get-started-create-account h3 {
+    font-size: 25px;
+  }
+  .youtube-account-open {
+    height: 189px;
+  }
+  .faq-accordion-content {
+    text-align: left;
+  }
+  .spacing-mobile {
+    padding-bottom: 35px;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .cashplus-points {
+    padding-top: 50px;
+    text-align: left;
+  }
+  .uobam-app-logo {
+    width: 50px;
+  }
+  .appstore-logo, .playstore-logo {
+    width: 135px;
+  }
+  .faq-accordion-content .accordion .accordion-content {
+    font-size: 12px;
+  }
+  .faq-accordion-content .accordion .accordion-title {
+    font-size: 14px;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  
-  
   .ptb-100 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -227,8 +185,6 @@ Responsive CSS
   .navbar-light .navbar-nav {
     margin-top: 14px;
   }
-  
-  
   .navbar-light .others-option .option-item .default-btn {
     padding: 10px 20px;
     font-size: 14px;
@@ -244,186 +200,101 @@ Responsive CSS
   .main-banner .banner-content h1 {
     font-size: 115px;
   }
-  
-  
   .main-banner .banner-image {
     margin-top: 50px;
   }
-  
-  
-  
-  
-  
-  
- 
-  
-  
-  
-  
   .testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
     opacity: 1;
     visibility: visible;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   .right-by-you {
     width: 100px;
   }
-  
-  
-  
-  
-	.main-banner .singpass-image-right {
-		text-align: center;
-	}
-	.singpass-padding-right {
-		padding-right: 0px;
-	}
-	.appstore-image-left img {
-	width: 175px;
-}
-	.main-banner .logos-fluid {
-		padding-bottom: 35px;
-	}
-	.main-banner .appstore-image-left {
-		margin-bottom: 15px;
-	}
-  .youtube-account-open {
-	height: 390px;
+  .main-banner .singpass-image-right {
+    text-align: center;
   }
-	#getstarted h2 {
-		font-size: 50px;
-	}
-	#about-cashxtra .container {
-		text-align: center;
-	}
-	#about-cashxtra .container .col-lg-6 {
-		padding-bottom: 60px;
-		text-align: left;
-	}
-	#about-cashxtra h2 {
-		font-size: 40px;
-	}
-	
-	
-	
-	.funding-options {
-		padding-left: 0px;
-	}
-	.cashplusfeatures-content h5 {
-	font-size: 1.1rem;
-    }
-	#fund-description table {
-		width: 696px;
-	}
-	.faq-accordion-content .accordion .accordion-title {
+  .singpass-padding-right {
+    padding-right: 0px;
+  }
+  .appstore-image-left img {
+    width: 175px;
+  }
+  .main-banner .logos-fluid {
+    padding-bottom: 35px;
+  }
+  .main-banner .appstore-image-left {
+    margin-bottom: 15px;
+  }
+  .youtube-account-open {
+    height: 390px;
+  }
+  #getstarted h2 {
+    font-size: 50px;
+  }
+  #about-cashxtra .container {
+    text-align: center;
+  }
+  #about-cashxtra .container .col-lg-6 {
+    padding-bottom: 60px;
+    text-align: left;
+  }
+  #about-cashxtra h2 {
+    font-size: 40px;
+  }
+  .funding-options {
+    padding-left: 0px;
+  }
+  .cashplusfeatures-content h5 {
+    font-size: 1.1rem;
+  }
+  #fund-description table {
+    width: 696px;
+  }
+  .faq-accordion-content .accordion .accordion-title {
     font-size: 16px;
   }
-	
-	.cashplusfeatures p {
-		font-size: 14px;
-	}
+  .cashplusfeatures p {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
   .faq-accordion-content .accordion .accordion-title {
     font-size: 18px;
   }
-  
-  
-  
   .right-by-you {
     width: 120px;
   }
-  
-  
-  
-  
-  
   .youtube-account-open {
-	height: 525px;
+    height: 525px;
   }
   .main-banner .banner-content h3 {
-	font-size: 1.6rem;	
+    font-size: 1.6rem;
   }
   .main-banner .banner-content h1 {
-	font-size: 5.4rem;	
+    font-size: 5.4rem;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
-  
   .faq-accordion-content .accordion .accordion-title {
     font-size: 18px;
   }
-  
-  
-  
   .right-by-you {
     width: 120px;
   }
-  
-  
-  
-  
-  
   .youtube-account-open {
-	height: 525px;
+    height: 525px;
   }
   .main-banner .banner-content h3 {
-	font-size: 1.6rem;	
+    font-size: 1.6rem;
   }
   .main-banner .banner-content {
-	padding-left: 20px;	
+    padding-left: 20px;
   }
   .main-banner .banner-content h1 {
-	font-size: 4rem;	
+    font-size: 4rem;
   }
-	.earn-more-header {
-		font-size:40px!important;
-	}
-}
-@media only screen and (min-width: 1367px) and (max-width: 1920px) {
-  
-  .faq-accordion-content .accordion .accordion-title {
-    font-size: 18px;
-  }
-  
-  
-  
-  .right-by-you {
-    width: 120px;
-  }
-  
-  
-  
-  
-  
-  .youtube-account-open {
-	height: 525px;
-  }
-  .main-banner .banner-content h3 {
-	font-size: 1.6rem;	
-  }
-  .main-banner .banner-content h1 {
-	font-size: 5.4rem;	
+  .earn-more-header {
+    font-size: 40px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

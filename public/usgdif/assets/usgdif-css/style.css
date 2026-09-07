@@ -284,11 +284,18 @@ Banner Area CSS
 }
 .main-banner .banner-content h1 {
   font-size: 4.05rem;
-  color: #FFF;
+  color: #44474d!important;
   margin: 0 0 10px 0;
   line-height: 1.3;
-  text-shadow: 2px 2px 5px #000;
   font-weight: 700;
+}
+.main-banner .banner-content h2 {
+  font-size: 2rem;
+  color: #44474d!important;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  font-weight: 400;
+  margin-top: 20px;
 }
 .main-banner .banner-content h3 {
   font-size: 2.2rem;
@@ -305,12 +312,14 @@ Banner Area CSS
 
 .main-banner .banner-image {
   text-align: right;
+  display: flex;
+  justify-content: center;
 }
 .main-banner .singpass-image-right {
   text-align: right;
 }
 .main-banner .singpass-image-right p {
-  color: #FFF;
+  color: #000000;
 }
 .main-banner .uobam-image-center {
   text-align: center;
@@ -322,7 +331,199 @@ Banner Area CSS
   text-align: left;
 }
 .main-banner .appstore-image-left p {
-  color: #FFF;
+  color: #000000;
+}
+/* =========================================================
+   MONTHLY INCOME HERO STAT
+   ========================================================= */
+
+.hero-yield {
+  position: relative;
+  z-index: 1;
+
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  color: #44474d;
+}
+
+
+/* ---------------------------------------------------------
+   SOFT BACKGROUND WASH
+   --------------------------------------------------------- */
+
+.hero-yield::before {
+  content: "";
+  position: absolute;
+
+  /* Your chosen wash size */
+  inset: -80px -110px;
+
+  z-index: -1;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255,255,255,0.78) 0%,
+    rgba(255,255,255,0.48) 38%,
+    rgba(255,255,255,0.22) 58%,
+    rgba(255,255,255,0) 80%
+  );
+
+  filter: blur(14px);
+
+  pointer-events: none;
+}
+
+
+/* ---------------------------------------------------------
+   MONTHLY INCOME LABEL
+   --------------------------------------------------------- */
+
+.yield-label {
+  position: relative;
+  z-index: 2;
+
+  font-size: 26px;
+  font-weight: 650;
+  line-height: 1.1;
+
+  margin-bottom: 150px;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER + % P.A.
+   --------------------------------------------------------- */
+
+.yield-value {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   SVG NUMBER 4
+   --------------------------------------------------------- */
+
+.yield-number-svg {
+  display: inline-block;
+
+  width: 145px;
+  height: 175px;
+
+  flex-shrink: 0;
+}
+
+
+.yield-number-svg svg {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+
+/* Main static number */
+
+.four-base {
+  font-size: 400px;
+  font-weight: 500;
+
+  fill: #44474d;
+}
+
+
+/* ---------------------------------------------------------
+   TRAVELLING LIGHT AROUND THE BORDER OF THE 4
+   --------------------------------------------------------- */
+
+.four-trace {
+  font-size: 400px;
+  font-weight: 500;
+
+  fill: none;
+
+  stroke: url(#fourTraceGradient);
+  stroke-width: 2.5px;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  /*
+     35 = visible illuminated section
+     2000 = long invisible section so you mainly see
+            one travelling streak
+  */
+  stroke-dasharray: 35 2000;
+  stroke-dashoffset: 0;
+
+  opacity: 0.95;
+
+  filter:
+    drop-shadow(0 0 2px rgba(255,255,255,1))
+    drop-shadow(0 0 5px rgba(120,210,255,0.75))
+    drop-shadow(0 0 8px rgba(75,99,255,0.35));
+
+  animation: traceFour 5s linear infinite;
+	/* Start animation part-way through */
+  animation-delay: -1.2s;
+}
+
+
+@keyframes traceFour {
+
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -2035;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   %* + P.A.
+   --------------------------------------------------------- */
+
+.yield-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 55px;
+  margin-top: -3px;
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.02;
+}
+
+/* ---------------------------------------------------------
+   ACCESSIBILITY
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .four-trace {
+    animation: none;
+    opacity: 0;
+  }
+
 }
 
 /*================================================
