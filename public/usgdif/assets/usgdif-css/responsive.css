@@ -64,6 +64,7 @@ Responsive CSS
   }
   .main-banner .banner-content h2 {
     font-size: clamp(20px, 5.556vw, 23px);
+	font-weight: 500;
   }
 	#home .card {
 		margin: 0 10px 20px 10px;
@@ -121,16 +122,15 @@ Responsive CSS
     font-size: 21px;
   }
 	.yield-label {
-		margin-bottom: 90px;
+		margin-bottom: 30px;
 	}
   .yield-number-svg {
     width: 120px;
     height: 150px;
   }
 
-  .four-base,
-  .four-trace {
-    font-size: 330px;
+  .four-base, .four-trace {
+    font-size: 230px;
   }
   .yield-unit {
     font-size: 34px;
