@@ -81,12 +81,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 .pb-100 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
 .default-btn {
   border: none;
   position: relative;
@@ -150,7 +148,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   line-height: 1.8;
 }
-
 /*================================================
 Preloader Area CSS
 =================================================*/
@@ -247,14 +244,12 @@ Navbar Area CSS
 .navbar-light .navbar-nav {
   margin: auto;
 }
-
 .navbar-light .others-option .option-item {
   color: #000000;
   display: inline-block;
   position: relative;
   line-height: 1;
 }
-
 .right-by-you {
   margin-left: 20px;
   width: 120px;
@@ -284,14 +279,14 @@ Banner Area CSS
 }
 .main-banner .banner-content h1 {
   font-size: 4.05rem;
-  color: #0047ba!important;
+  color: #0047ba !important;
   margin: 0 0 10px 0;
   line-height: 1.3;
   font-weight: 700;
 }
 .main-banner .banner-content h2 {
   font-size: 2rem;
-  color: #0047ba!important;
+  color: #0047ba !important;
   margin: 0 0 10px 0;
   line-height: 1.3;
   font-weight: 400;
@@ -309,7 +304,6 @@ Banner Area CSS
   line-height: 1.8;
   font-size: 22px;
 }
-
 .main-banner .banner-image {
   text-align: right;
   display: flex;
@@ -336,132 +330,85 @@ Banner Area CSS
 /* =========================================================
    MONTHLY INCOME HERO STAT
    ========================================================= */
-
 .hero-yield {
   position: relative;
   z-index: 1;
-
   width: 350px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
-
   color: #0047ba;
 }
-
-
 /* ---------------------------------------------------------
    SOFT BACKGROUND WASH
    --------------------------------------------------------- */
-
 .hero-yield::before {
   content: "";
   position: absolute;
-
   /* Your chosen wash size */
   inset: -80px -110px;
-
   z-index: -1;
-
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255,255,255,0.78) 0%,
-    rgba(255,255,255,0.48) 38%,
-    rgba(255,255,255,0.22) 58%,
-    rgba(255,255,255,0) 80%
-  );
-
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.48) 38%, rgba(255, 255, 255, 0.22) 58%, rgba(255, 255, 255, 0) 80%);
   filter: blur(14px);
-
   pointer-events: none;
 }
-
-
 /* ---------------------------------------------------------
    MONTHLY INCOME LABEL
    --------------------------------------------------------- */
-
 .yield-label {
   position: relative;
   z-index: 2;
-
   font-size: 26px;
   font-weight: 650;
   line-height: 1.1;
-
   margin-bottom: 150px;
+  text-shadow: 2px 2px 5px #FFF;
 }
-
-
 /* ---------------------------------------------------------
    NUMBER + % P.A.
    --------------------------------------------------------- */
-
 .yield-value {
   position: relative;
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   line-height: 1;
+  text-shadow: 2px 2px 5px #FFF;
 }
-
-
 /* ---------------------------------------------------------
    SVG NUMBER 4
    --------------------------------------------------------- */
-
 .yield-number-svg {
   display: inline-block;
-
   width: 145px;
   height: 175px;
-
   flex-shrink: 0;
 }
-
-
 .yield-number-svg svg {
   display: block;
-
   width: 100%;
   height: 100%;
-
   overflow: visible;
 }
-
-
 /* Main static number */
-
 .four-base {
   font-size: 400px;
   font-weight: 500;
-
   fill: #0047ba;
 }
-
-
 /* ---------------------------------------------------------
    TRAVELLING LIGHT AROUND THE BORDER OF THE 4
    --------------------------------------------------------- */
-
 .four-trace {
   font-size: 400px;
   font-weight: 500;
-
   fill: none;
-
   stroke: url(#fourTraceGradient);
   stroke-width: 2.5px;
-
   stroke-linecap: round;
   stroke-linejoin: round;
-
   /*
      35 = visible illuminated section
      2000 = long invisible section so you mainly see
@@ -469,81 +416,58 @@ Banner Area CSS
   */
   stroke-dasharray: 35 2000;
   stroke-dashoffset: 0;
-
   opacity: 0.95;
-
   filter:
-    drop-shadow(0 0 2px rgba(255,255,255,1))
-    drop-shadow(0 0 5px rgba(120,210,255,0.75))
-    drop-shadow(0 0 8px rgba(75,99,255,0.35));
-
+    drop-shadow(0 0 2px rgba(255, 255, 255, 1)) drop-shadow(0 0 5px rgba(120, 210, 255, 0.75)) drop-shadow(0 0 8px rgba(75, 99, 255, 0.35));
   animation: traceFour 5s linear infinite;
-	/* Start animation part-way through */
+  /* Start animation part-way through */
   animation-delay: -2.2s;
+  text-shadow: 2px 2px 5px #FFF;
 }
-
-
 @keyframes traceFour {
-
   from {
     stroke-dashoffset: 0;
   }
-
   to {
     stroke-dashoffset: -2035;
   }
-
 }
-
-
 /* ---------------------------------------------------------
    %* + P.A.
    --------------------------------------------------------- */
-
 .yield-unit {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   margin-left: 55px;
   margin-top: -3px;
-
   font-size: 42px;
   font-weight: 700;
   line-height: 1.02;
 }
-
 /* ---------------------------------------------------------
    ACCESSIBILITY
    --------------------------------------------------------- */
-
 @media (prefers-reduced-motion: reduce) {
-
   .four-trace {
     animation: none;
     opacity: 0;
   }
-
 }
-
 /*================================================
 Animated Cursor CSS
 =================================================*/
-
 /*================================================
 Fun Facts Area CSS
 =================================================*/
-
 /*================================================
 About Area CSS
 =================================================*/
-
 .about-area {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-
 /*================================================
 Features Area CSS
 =================================================*/
@@ -552,22 +476,18 @@ Features Area CSS
   z-index: 1;
   overflow: hidden;
 }
-
 /*================================================
 Screenshot Area CSS
 =================================================*/
-
 /*================================================
 Testimonial Area CSS
 =================================================*/
-
 .testimonial-slides {
   position: relative;
 }
 .testimonial-slides .client-feedback {
   position: relative;
 }
-
 .testimonial-slides .client-thumbnails {
   position: relative;
   max-width: 450px;
@@ -575,7 +495,6 @@ Testimonial Area CSS
   margin-left: auto;
   margin-right: auto;
 }
-
 .testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
   position: absolute;
   cursor: pointer;
@@ -607,11 +526,9 @@ Testimonial Area CSS
   opacity: 1;
   visibility: visible;
 }
-
 /*================================================
 Overview Area CSS
 =================================================*/
-
 /*================================================
 Faq Area CSS
 =================================================*/
@@ -686,27 +603,21 @@ Faq Area CSS
 /*================================================
 Team Area CSS
 =================================================*/
-
 /*================================================
 App Download Area CSS
 =================================================*/
-
 /*================================================
 Blog Area CSS
 =================================================*/
-
 /*================================================
 Contact Area CSS
 =================================================*/
-
 /*================================================
 Subscribe Area CSS
 =================================================*/
-
 /*================================================
 Banner Area Two CSS
 =================================================*/
-
 #particles-js {
   width: 100%;
   height: 100%;
@@ -718,19 +629,15 @@ Banner Area Two CSS
 /*================================================
 Video Area CSS
 =================================================*/
-
 /*================================================
 Page Title Area CSS
 =================================================*/
-
 /*================================================
 Pagination Area CSS
 =================================================*/
-
 /*================================================
 Footer Area CSS
 =================================================*/
-
 /*================================================
 Copy Right CSS
 =================================================*/
@@ -842,7 +749,6 @@ Stripe Pattern
   margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
-
 .background-grey {
   background-color: #f4f4f4;
 }
@@ -879,11 +785,9 @@ Stripe Pattern
 .color-5c55eb {
   color: #5c55eb;
 }
-
 .color-009790 {
   color: #009790;
 }
-
 .client-testimonial {
   background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
   background-position: center center;
@@ -904,7 +808,6 @@ Stripe Pattern
   background: #000000;
   opacity: .35;
 }
-
 .get-started-download-now {
   text-align: center;
 }
@@ -915,7 +818,6 @@ Stripe Pattern
   padding-bottom: 20px;
   color: #FFF;
 }
-
 .get-started-create-account {
   text-align: center;
   margin-bottom: 40px;
@@ -937,7 +839,6 @@ Stripe Pattern
   margin-bottom: 40px;
   font-size: 17px;
 }
-
 .maxDrawdown {
   margin-bottom: 40px;
 }
@@ -1022,16 +923,13 @@ Stripe Pattern
   padding-bottom: 80px;
   text-align: center;
 }
-
 .cashplusfeatures-content h5 {
   font-size: 2rem;
   font-weight: 400;
 }
-
 .cashplusfeatures-content img {
   margin-bottom: 15px;
 }
-
 .appstore-image-left img {
   width: 200px;
 }
@@ -1041,11 +939,9 @@ Stripe Pattern
 #about-cashxtra .container .col-lg-6 {
   padding-bottom: 100px;
 }
-
 .open-account {
   font-size: 12.7px;
 }
-
 .uobam-app-logo {
   width: 100px;
 }
@@ -1068,126 +964,77 @@ Stripe Pattern
   width: 100%;
   height: 730px;
 }
-
 /*Start Card */
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
-
 /* Liquid glass cards */
 /* ==========================================================
    REUSABLE LIQUID GLASS CARD
    ========================================================== */
-
 .glass-card {
   position: relative;
   overflow: hidden;
-
   height: 100%;
   padding: 30px;
   border-radius: 18px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.20) 0%,
-    rgba(255, 255, 255, 0.08) 45%,
-    rgba(255, 255, 255, 0.04) 100%
-  );
-
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0.04) 100%);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-
   border: 1px solid rgba(255, 255, 255, 0.38);
-
   box-shadow:
-    0 12px 32px rgba(0, 0, 0, 0.16),
-    inset 0 1px 1px rgba(255, 255, 255, 0.55),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.08);
-
+    0 12px 32px rgba(0, 0, 0, 0.16), inset 0 1px 1px rgba(255, 255, 255, 0.55), inset 0 -1px 1px rgba(255, 255, 255, 0.08);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease,
-    background 0.3s ease;
+    transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
-
 /* Soft reflected light */
 .glass-card::before {
   content: "";
   position: absolute;
   inset: 0;
-
   border-radius: inherit;
   pointer-events: none;
-
   background:
-    radial-gradient(
-      ellipse at 10% 0%,
-      rgba(255, 255, 255, 0.32) 0%,
-      rgba(255, 255, 255, 0.10) 25%,
-      transparent 55%
-    );
+    radial-gradient(ellipse at 10% 0%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.10) 25%, transparent 55%);
 }
-
 /* Highlight along upper glass edge */
 .glass-card::after {
   content: "";
   position: absolute;
-
   top: 0;
   left: 10%;
   width: 55%;
   height: 1px;
-
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.95),
-    transparent
-  );
-
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
   pointer-events: none;
 }
-
 /* Keep text above reflections */
 .glass-card > * {
   position: relative;
   z-index: 1;
 }
-
 /* Icon container */
 .glass-card .num {
   width: 52px;
   height: 52px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 20px;
-
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.13);
-
   border: 1px solid rgba(255, 255, 255, 0.32);
-
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.45),
-    0 5px 15px rgba(0, 0, 0, 0.10);
-
+    inset 0 1px 1px rgba(255, 255, 255, 0.45), 0 5px 15px rgba(0, 0, 0, 0.10);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   color: #fff;
-
   font-size: 13px;
   font-weight: 800;
   letter-spacing: .1em;
 }
-
 /* Heading */
 .glass-card h3 {
   color: #fff;
@@ -1195,70 +1042,40 @@ Stripe Pattern
   line-height: 1.3;
   margin-bottom: 12px;
 }
-
 /* Body */
 .glass-card p {
   color: rgba(255, 255, 255, 0.82);
   line-height: 1.6;
 }
-
 .glass-card p:last-child {
   margin-bottom: 0;
 }
-
 /* Hover */
 .glass-card:hover {
   transform: translateY(-5px);
-
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.11) 45%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.11) 45%, rgba(255, 255, 255, 0.05) 100%);
   border-color: rgba(255, 255, 255, 0.55);
-
   box-shadow:
-    0 18px 42px rgba(0, 0, 0, 0.22),
-    inset 0 1px 1px rgba(255, 255, 255, 0.65),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.10);
+    0 18px 42px rgba(0, 0, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.65), inset 0 -1px 1px rgba(255, 255, 255, 0.10);
 }
-
 /* Keep content above glass reflections */
 .grid-3 .card > * {
   position: relative;
   z-index: 1;
 }
-
 .grid-3 .card p:last-child {
   margin-bottom: 0;
 }
-
 .grid-3 .card {
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease,
-    background 0.3s ease;
+    transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
-
 .grid-3 .card:hover {
   transform: translateY(-5px);
-
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.11) 45%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.11) 45%, rgba(255, 255, 255, 0.05) 100%);
   border-color: rgba(255, 255, 255, 0.55);
-
   box-shadow:
-    0 18px 42px rgba(0, 0, 0, 0.22),
-    inset 0 1px 1px rgba(255, 255, 255, 0.65),
-    inset 0 -1px 1px rgba(255, 255, 255, 0.10);
+    0 18px 42px rgba(0, 0, 0, 0.22), inset 0 1px 1px rgba(255, 255, 255, 0.65), inset 0 -1px 1px rgba(255, 255, 255, 0.10);
 }
 /*end card */
 td.num, th.num {
