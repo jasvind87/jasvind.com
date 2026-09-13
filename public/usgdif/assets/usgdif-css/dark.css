@@ -196,13 +196,29 @@ Default CSS
 	color: #ffa666!important;
 }
 .theme-dark #sg-fundAssetEngine {
-	background-color: #000000;
+	background-color: #35363e;
 }
 .theme-dark .sg-fundAssetEngine-card h3 {
 	color: #ffa666!important;
 }
 .theme-dark .sg-fundAssetEngine-card p {
 	color: #333333;
+}
+.theme-dark #sg-fundAllocation {
+	background: #35363e;
+}
+.theme-dark .sg-fundAllocation-allocation h2,
+.theme-dark .sg-fundAllocation-holdings h2 {
+  color: #ffa666!important;
+}
+.theme-dark .sg-fundAllocation-figure {
+	color: #FFFFFF;
+}
+.theme-dark #fund-description {
+	background-color: #35363e;
+}
+.theme-dark #fund-description h2{
+	color: #ffa666!important;
 }
 /*# sourceMappingURL=dark.css.map */
 /*================================================

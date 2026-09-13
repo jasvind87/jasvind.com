@@ -782,8 +782,20 @@ Stripe Pattern
   padding-top: 50px;
   font-size: 17px;
 }
+#fund-description {
+	padding: 75px 0 0 0;
+	background-color: #FFFFFF;
+}
 #fund-description h2 {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: left;
+  color: #ffa666;
+  padding-right: 50px;
+}
+.fundDescriptionInfo {
+	font-size: 20px;
+	padding-right: 50px;
 }
 #fund-description h3 {
   font-weight: 300;
@@ -845,7 +857,7 @@ Stripe Pattern
   background-color: #f2f5ff;
 }
 #fund-description table {
-  width: 500px;
+  width: 100%;
   max-width: 100%;
   line-height: 2;
   margin-bottom: 40px;
@@ -1117,74 +1129,56 @@ What This Fund Means For Your Money
 What Makes the United SG Dynamic Income Fund Different
 =================================================*/
 #whatThisFundDifferent {
-	padding: 100px 0;
-	background:#FFFFFF;
+  padding: 100px 0;
+  background: #FFFFFF;
 }
 #whatThisFundDifferent .section-title h2 {
-	font-size: 40px;
-	font-weight: 400;
-	color: #333333;
+  font-size: 40px;
+  font-weight: 400;
+  color: #333333;
 }
 #whatThisFundDifferent .sectionIntro {
-	font-size: 20px;
-	text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 /* ===== THIS FUND DIFFERENT ===== */
 .sg-thisFundDifferent {
   width: 100%;
   max-width: 1560px;
-
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
-
   gap: 44px;
-
   padding: 40px 36px;
 }
 /* ===== CARD ===== */
 .sg-thisFundDifferent-card {
   width: 100%;
-
   min-height: 230px;
-
   display: flex;
   align-items: center;
-
   gap: 54px;
-
   padding: 42px 68px;
-
   background: #ffffff;
-
   border-radius: 16px;
-
   box-shadow:
     0 12px 30px rgba(0, 0, 0, 0.16);
-
 }
 /* ===== ICON ===== */
 .sg-thisFundDifferent-icon {
   width: 136px;
   height: 136px;
-
   flex: 0 0 136px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #ffa666;
 }
 .sg-thisFundDifferent-icon img {
   display: block;
-
   width: 70px;
   height: 70px;
-
   object-fit: contain;
 }
 /* ===== CONTENT ===== */
@@ -1192,32 +1186,23 @@ What Makes the United SG Dynamic Income Fund Different
   flex: 1;
   min-width: 0;
 }
-
-
 /* Heading */
 .sg-thisFundDifferent-content h3 {
   margin: 0 0 14px;
-
   color: #ffa666;
-
   font-size: 33px;
   font-weight: 400;
   line-height: 1.12;
-
   letter-spacing: -0.02em;
 }
 .mobile-break {
   display: none;
 }
-
 /* Body */
 .sg-thisFundDifferent-content p {
   max-width: 1100px;
-
   margin: 0;
-
   color: #000000;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 1.35;
@@ -1227,235 +1212,340 @@ What Makes the United SG Dynamic Income Fund Different
 How the Fund Invests (The 5-Asset Engine)
 =================================================*/
 #sg-fundAssetEngine {
-	background-color: #FFFFFF;
-	padding: 100px 0;
+  background-color: #FFFFFF;
+  padding: 100px 0 100px 0;
 }
 /* =========================================================
    FUND ASSET ENGINE
    ========================================================= */
-
 .sg-fundAssetEngine {
   width: 100%;
-
   margin: 0 auto;
-
   padding: 70px 36px 60px;
-
   overflow: hidden;
 }
-
-
 /* =========================================================
    INTRO
    ========================================================= */
-
 .sg-fundAssetEngine-intro {
   position: relative;
-
   min-height: 230px;
-
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   gap: 40px;
-
   padding: 0 10% 0;
 }
-
-
 .sg-fundAssetEngine-introCopy {
   position: relative;
   z-index: 2;
-
   width: 65%;
 }
-
-
 .sg-fundAssetEngine-introCopy h2 {
   margin: 0 0 32px;
-
   color: #333333;
-
   font-size: 40px;
   font-weight: 400;
   line-height: 1.15;
-
   letter-spacing: -0.02em;
 }
-
-
 .sg-fundAssetEngine-introCopy p {
   max-width: 780px;
-
   margin: 0;
-
   color: #333333;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 1.45;
 }
-
-
 /* =========================================================
    ILLUSTRATION
    ========================================================= */
-
 .sg-fundAssetEngine-visual {
   position: absolute;
-
   right: 0;
   bottom: -8px;
   margin-bottom: -20px;
-  width: 30%;
-
   z-index: 1;
+}
+.sg-fundAssetEngine-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: right bottom;
+}
+/* =========================================================
+   CARD TRACK — DESKTOP
+   ========================================================= */
+.sg-fundAssetEngine-track {
+  display: flex;
+  box-sizing: border-box;
+  gap: 28px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding:
+    24px max(20px, calc((100% - 500px) / 2)) 26px;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+}
+.sg-fundAssetEngine-track::-webkit-scrollbar {
+  display: none;
+}
+/* =========================================================
+   CARD
+   ========================================================= */
+.sg-fundAssetEngine-card {
+  flex: 0 0 500px;
+  box-sizing: border-box;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 48px 40px;
+  border-radius: 28px;
+  text-align: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+/* Card colours */
+.sg-fundAssetEngine-card--blue {
+  background: #f2f5ff;
+}
+.sg-fundAssetEngine-card--peach {
+  background: #fff0e6;
+}
+.sg-fundAssetEngine-card--purple {
+  background: #eeeaff;
+}
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+.sg-fundAssetEngine-card h3 {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 30px;
+  color: #ffa666;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+/* =========================================================
+   CARD COPY
+   ========================================================= */
+.sg-fundAssetEngine-card p {
+  width: 100%;
+  margin: 0;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+/* =========================================================
+   CAROUSEL CONTROLS
+   Hidden on desktop
+   ========================================================= */
+.sg-fundAssetEngine-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 18px;
+}
+/*============================================== */
+
+/*==============================================
+FUND ALLOCATION
+=================================================*/
+#sg-fundAllocation {
+	background: #ffffff;
+}
+.sg-fundAllocation {
+  width: 100%;
+  padding: 0px 46px 22px;
+  overflow: hidden;
+}
+
+.sg-fundAllocation-inner {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 470px minmax(0, 1fr);
+  gap: 86px;
 }
 
 
-.sg-fundAssetEngine-visual img {
-  display: block;
-
+/* LEFT PANEL */
+.sg-fundAllocation-allocation {
   width: 100%;
-  height: auto;
+  min-height: 720px;
+  padding: 42px 44px 40px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.17);
+}
 
+.sg-fundAllocation-allocation h2,
+.sg-fundAllocation-holdings h2 {
+  margin: 0;
+  color: #333333;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+}
+
+
+/* CHART IMAGE */
+.sg-fundAllocation-chartWrap {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.sg-fundAllocation-chartImg {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* FIGURES */
+.sg-fundAllocation-figures {
+  width: 220px;
+  margin: 26px auto 0;
+}
+
+.sg-fundAllocation-figure {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 18px;
+  margin-bottom: 14px;
+  color: #333333;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.sg-fundAllocation-figure strong {
+  font-weight: 600;
+  text-align: right;
+}
+
+
+/* RIGHT PANEL */
+.sg-fundAllocation-holdings {
+  position: relative;
+  min-width: 0;
+  padding: 45px 0 190px;
+}
+
+
+/* TABLE */
+.sg-fundAllocation-tableWrap {
+  width: 100%;
+  margin-top: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.sg-fundAllocation-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #3f3f3f;
+  font-size: 14px;
+}
+
+.sg-fundAllocation-table thead {
+  background: #ff9d60;
+  color: #ffffff;
+}
+
+.sg-fundAllocation-table th {
+  padding: 8px 30px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.sg-fundAllocation-table th:first-child {
+  width: 62%;
+}
+
+.sg-fundAllocation-table th:last-child {
+  width: 38%;
+}
+.sg-fundAllocation-table th:first-child,
+.sg-fundAllocation-table td:first-child {
+  text-align: left;
+}
+
+.sg-fundAllocation-table th:last-child,
+.sg-fundAllocation-table td:last-child {
+  text-align: right;
+}
+.sg-fundAllocation-table td {
+  padding: 8px 30px;
+  line-height: 1.2;
+}
+
+.sg-fundAllocation-table tbody tr:nth-child(odd) {
+  background: #fbdcc7;
+}
+
+.sg-fundAllocation-table tbody tr:nth-child(even) {
+  background: #fff7f1;
+}
+
+
+/* SOURCE */
+.sg-fundAllocation-source {
+  margin: 30px 0 0;
+  color: #444444;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+/* SKYLINE */
+.sg-fundAllocation-skyline {
+  position: absolute;
+  left: -35px;
+  right: 0;
+  bottom: -100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.sg-fundAllocation-skyline img {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
   object-fit: contain;
   object-position: right bottom;
 }
 
 
-/* =========================================================
-   CARD TRACK — DESKTOP
-   ========================================================= */
-
-.sg-fundAssetEngine-track {
-  display: flex;
-  box-sizing: border-box;
-  gap: 28px;
-
-  overflow-x: auto;
-  overflow-y: hidden;
-
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-
-  -webkit-overflow-scrolling: touch;
-
-  /*
-   * Centres the focused 500px card.
-   * Neighbouring cards remain visible.
-   */
-  padding:
-    24px
-    max(20px, calc((100% - 500px) / 2))
-    26px;
-
-  scrollbar-width: none;
-
-  overscroll-behavior-x: contain;
-  touch-action: pan-x;
-}
-.sg-fundAssetEngine-track::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* =========================================================
-   CARD
-   ========================================================= */
-
-.sg-fundAssetEngine-card {
-  flex: 0 0 500px;
-  box-sizing: border-box;
-  min-height: 415px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 76px 48px 44px;
-
-  border-radius: 28px;
-
-  text-align: center;
-
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-
-
-/* Card colours */
-
-.sg-fundAssetEngine-card--blue {
-  background: #f2f5ff;
-}
-
-
-.sg-fundAssetEngine-card--peach {
-  background: #fff0e6;
-}
-
-
-.sg-fundAssetEngine-card--purple {
-  background: #eeeaff;
-}
-
-
-/* =========================================================
-   CARD HEADING
-   ========================================================= */
-
-.sg-fundAssetEngine-card h3 {
-  min-height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0 0 30px;
-
-  color: #ffa666;
-
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.12;
-
-  letter-spacing: -0.01em;
-}
-
-
-/* =========================================================
-   CARD COPY
-   ========================================================= */
-
-.sg-fundAssetEngine-card p {
+/* BOTTOM RULE */
+.sg-fundAllocation-rule {
   width: 100%;
-
-  margin: 0;
-
-  color: #333333;
-
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.42;
+  max-width: 1680px;
+  height: 1px;
+  margin: 0 auto;
+  background: #cfcfcf;
 }
 
 
-/* =========================================================
-   CAROUSEL CONTROLS
-   Hidden on desktop
-   ========================================================= */
-
-.sg-fundAssetEngine-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 24px;
-
-  margin-top: 18px;
-}
 /*============================================== */
 #uobam_invest_logo2 {
   padding-right: 20px;
@@ -1565,7 +1655,6 @@ How the Fund Invests (The 5-Asset Engine)
   font-weight: 800;
   letter-spacing: .1em;
 }
-
 /* Hover */
 .glass-card:hover {
   transform: translateY(-5px);
