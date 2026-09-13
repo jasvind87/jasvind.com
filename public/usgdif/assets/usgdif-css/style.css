@@ -783,8 +783,8 @@ Stripe Pattern
   font-size: 17px;
 }
 #fund-description {
-	padding: 75px 0 0 0;
-	background-color: #FFFFFF;
+  padding: 75px 0 100px 0;
+  background-color: #FFFFFF;
 }
 #fund-description h2 {
   font-weight: 400;
@@ -794,12 +794,22 @@ Stripe Pattern
   padding-right: 50px;
 }
 .fundDescriptionInfo {
-	font-size: 20px;
-	padding-right: 50px;
+  font-size: 20px;
+  padding-right: 50px;
 }
 #fund-description h3 {
   font-weight: 300;
   font-size: 25px;
+  color: #ffa666;
+}
+.riskFeesCard {
+  padding: 42px 44px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.17);
+}
+.riskRating {
+	color: #00a19b;
 }
 #getstarted h2 {
   font-weight: 300;
@@ -1359,19 +1369,17 @@ How the Fund Invests (The 5-Asset Engine)
   margin-top: 18px;
 }
 /*============================================== */
-
 /*==============================================
 FUND ALLOCATION
 =================================================*/
 #sg-fundAllocation {
-	background: #ffffff;
+  background: #ffffff;
 }
 .sg-fundAllocation {
   width: 100%;
   padding: 0px 46px 22px;
   overflow: hidden;
 }
-
 .sg-fundAllocation-inner {
   width: 100%;
   max-width: 1680px;
@@ -1380,21 +1388,16 @@ FUND ALLOCATION
   grid-template-columns: 470px minmax(0, 1fr);
   gap: 86px;
 }
-
-
 /* LEFT PANEL */
 .sg-fundAllocation-allocation {
   width: 100%;
   min-height: 720px;
   padding: 42px 44px 40px;
-  background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.17);
 }
-
-.sg-fundAllocation-allocation h2,
-.sg-fundAllocation-holdings h2 {
+.sg-fundAllocation-allocation h2, .sg-fundAllocation-holdings h2 {
   margin: 0;
   color: #333333;
   font-size: 31px;
@@ -1402,14 +1405,11 @@ FUND ALLOCATION
   line-height: 1.15;
   text-align: center;
 }
-
-
 /* CHART IMAGE */
 .sg-fundAllocation-chartWrap {
   width: 100%;
   margin-top: 28px;
 }
-
 .sg-fundAllocation-chartImg {
   display: block;
   width: 100%;
@@ -1417,14 +1417,11 @@ FUND ALLOCATION
   height: auto;
   margin: 0 auto;
 }
-
-
 /* FIGURES */
 .sg-fundAllocation-figures {
   width: 220px;
   margin: 26px auto 0;
 }
-
 .sg-fundAllocation-figure {
   display: grid;
   grid-template-columns: 1fr 80px;
@@ -1434,21 +1431,16 @@ FUND ALLOCATION
   font-size: 22px;
   line-height: 1.2;
 }
-
 .sg-fundAllocation-figure strong {
   font-weight: 600;
   text-align: right;
 }
-
-
 /* RIGHT PANEL */
 .sg-fundAllocation-holdings {
   position: relative;
   min-width: 0;
   padding: 45px 0 190px;
 }
-
-
 /* TABLE */
 .sg-fundAllocation-tableWrap {
   width: 100%;
@@ -1456,55 +1448,43 @@ FUND ALLOCATION
   overflow: hidden;
   border-radius: 10px;
 }
-
 .sg-fundAllocation-table {
   width: 100%;
   border-collapse: collapse;
   color: #3f3f3f;
   font-size: 14px;
 }
-
 .sg-fundAllocation-table thead {
   background: #ff9d60;
   color: #ffffff;
 }
-
 .sg-fundAllocation-table th {
   padding: 8px 30px;
   text-align: left;
   font-weight: 600;
 }
-
 .sg-fundAllocation-table th:first-child {
   width: 62%;
 }
-
 .sg-fundAllocation-table th:last-child {
   width: 38%;
 }
-.sg-fundAllocation-table th:first-child,
-.sg-fundAllocation-table td:first-child {
+.sg-fundAllocation-table th:first-child, .sg-fundAllocation-table td:first-child {
   text-align: left;
 }
-
-.sg-fundAllocation-table th:last-child,
-.sg-fundAllocation-table td:last-child {
+.sg-fundAllocation-table th:last-child, .sg-fundAllocation-table td:last-child {
   text-align: right;
 }
 .sg-fundAllocation-table td {
   padding: 8px 30px;
   line-height: 1.2;
 }
-
 .sg-fundAllocation-table tbody tr:nth-child(odd) {
   background: #fbdcc7;
 }
-
 .sg-fundAllocation-table tbody tr:nth-child(even) {
   background: #fff7f1;
 }
-
-
 /* SOURCE */
 .sg-fundAllocation-source {
   margin: 30px 0 0;
@@ -1512,8 +1492,6 @@ FUND ALLOCATION
   font-size: 13px;
   line-height: 1.4;
 }
-
-
 /* SKYLINE */
 .sg-fundAllocation-skyline {
   position: absolute;
@@ -1525,7 +1503,6 @@ FUND ALLOCATION
   justify-content: flex-end;
   pointer-events: none;
 }
-
 .sg-fundAllocation-skyline img {
   display: block;
   width: 100%;
@@ -1534,8 +1511,6 @@ FUND ALLOCATION
   object-fit: contain;
   object-position: right bottom;
 }
-
-
 /* BOTTOM RULE */
 .sg-fundAllocation-rule {
   width: 100%;
@@ -1544,8 +1519,6 @@ FUND ALLOCATION
   margin: 0 auto;
   background: #cfcfcf;
 }
-
-
 /*============================================== */
 #uobam_invest_logo2 {
   padding-right: 20px;
@@ -1688,6 +1661,7 @@ td.num, th.num {
 }
 #understand6percent h3 {
   font-size: 22px;
+	text-align: center;
 }
 #understand6percent .card {
   height: 100%;

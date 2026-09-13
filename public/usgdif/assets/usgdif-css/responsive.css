@@ -154,8 +154,8 @@ Responsive CSS
     flex: 0 0 auto;
     width: 50%;
   }
-  .cashplus-points {
-    padding-top: 50px;
+  .usgdif-points {
+    padding-top: 20px;
     text-align: left;
   }
   .uobam-app-logo {
@@ -567,6 +567,9 @@ Responsive CSS
 	}
 	.regularSavingsPlan {
 		padding: 15px 0;
+	}
+	.riskFeesCard {
+		padding: 42px 20px 10px;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
