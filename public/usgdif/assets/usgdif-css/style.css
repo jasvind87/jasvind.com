@@ -53,7 +53,7 @@ input:focus {
   outline: 0;
 }
 p {
-  color: #646464;
+  color: #333333;
   line-height: 1.6;
   margin-bottom: 12px;
   font-size: 17px;
@@ -279,14 +279,14 @@ Banner Area CSS
 }
 .main-banner .banner-content h1 {
   font-size: 4.05rem;
-  color: #0047ba !important;
+  color: #333333 !important;
   margin: 0 0 10px 0;
   line-height: 1.3;
   font-weight: 700;
 }
 .main-banner .banner-content h2 {
   font-size: 2rem;
-  color: #0047ba !important;
+  color: #333333 !important;
   margin: 0 0 10px 0;
   line-height: 1.3;
   font-weight: 400;
@@ -338,7 +338,7 @@ Banner Area CSS
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #0047ba;
+  color: #333333;
 }
 /* ---------------------------------------------------------
    SOFT BACKGROUND WASH
@@ -396,7 +396,7 @@ Banner Area CSS
 .four-base {
   font-size: 400px;
   font-weight: 500;
-  fill: #0047ba;
+  fill: #333333;
 }
 /* ---------------------------------------------------------
    TRAVELLING LIGHT AROUND THE BORDER OF THE 4
@@ -761,8 +761,26 @@ Stripe Pattern
 .uobam-padding-left {
   padding-left: 25px;
 }
-#about-cashxtra h2 {
-  font-weight: 300;
+#about-united-sg-dynamic-income-fund {
+  background-color: #fffaf2;
+}
+#about-united-sg-dynamic-income-fund h2 {
+  font-size: 70px;
+  color: #ffa666;
+  font-weight: 400;
+  line-height: 1.2;
+}
+#about-united-sg-dynamic-income-fund .container .col-lg-6 {
+  padding-bottom: 100px;
+}
+.aboutIntro {
+  text-align: center;
+  font-size: 20px;
+}
+.aboutDisclaimer {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 17px;
 }
 #fund-description h2 {
   font-weight: 300;
@@ -781,12 +799,6 @@ Stripe Pattern
 }
 #getstarted .section-title p {
   font-size: 19px;
-}
-.color-5c55eb {
-  color: #5c55eb;
-}
-.color-009790 {
-  color: #009790;
 }
 .client-testimonial {
   background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
@@ -851,93 +863,177 @@ Stripe Pattern
 .funding-options p {
   padding-bottom: 20px;
 }
-.cashplusfeatures {
-  background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  z-index: 1;
+/*================================================
+About United SG Dynamic Income Fund
+=================================================*/
+#about-united-sg-dynamic-income-fund {
+	padding-top: 100px;
 }
-.cashplusfeatures::before {
+/*================================================
+Singapore Story
+=================================================*/
+.united-sg-dynamic-income-fund-singapore-story {
+  background-color: #FFFFFF;
+}
+.united-sg-dynamic-income-fund-singapore-story-content {
+  padding-left: 50px;
+}
+.united-sg-dynamic-income-fund-singapore-story-content h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  color: #333333;
+}
+.singaporeStory {
+  text-align: left;
+  font-size: 20px;
+}
+.united-sg-dynamic-income-fund-singapore-story-image {
+  text-align: center;
+}
+.trainImage {
+  padding-top: 75px;
+  border-bottom: 2px dashed #333333;
+}
+.singaporeStoryRow2 {
+  padding-top: 100px;
+}
+.singaporeStoryRow2 h3 {
+  font-size: 29px;
+  font-weight: 400;
+  text-align: left;
+  color: #ffa666;
+}
+.singaporeStoryRow2-content p {
+  text-align: left;
+}
+.borderBottomDashed {
+  position: relative;
+  padding-bottom: 40px;
+}
+.borderBottomDashed::after {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  width: 70%;
+  border-bottom: 2px dashed #333333;
+  left: 10px;
 }
-.cashplusfeatures h3, h4, h5 {
-  color: #FFF;
+.powerMultiAsset {
+	padding-top: 100px;
 }
-.cashplusfeatures h3 {
-  margin: 20px 0 30px 0;
-  font-size: 25px;
-  font-weight: 300;
-}
-.cashplusfeatures h4 {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
-  margin: 20px 0 40px;
-  padding: 12px 0;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0.03) 100%);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  border-radius: 16px;
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(255, 255, 255, 0.1);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
-}
-.cashplusfeatures h4::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background:
-    radial-gradient(ellipse at 15% 0%, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.10) 25%, transparent 55%);
-}
-.cashplusfeatures h4::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 12%;
-  width: 55%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
-  filter: blur(0.3px);
-}
-.cashplusfeatures p {
-  color: #FFF;
-  font-size: 17px;
-}
-.cashplusfeatures-content {
-  padding-bottom: 80px;
-  text-align: center;
-}
-.cashplusfeatures-content h5 {
-  font-size: 2rem;
+.powerMultiAsset h3{
+	font-size: 40px;
   font-weight: 400;
+  text-align: left;
+  color: #333333;
 }
-.cashplusfeatures-content img {
-  margin-bottom: 15px;
+/* ======== SG Strategy ======== */
+.sg-strategy {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 56px 36px 58px;
+}
+.sg-strategy-inner {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2.15fr) minmax(380px, 0.9fr);
+  align-items: end;
+  gap: 30px;
+  padding-top: 30px;
+}
+/* ======== CARD AREA ======== */
+.sg-strategy-content {
+  width: 100%;
+}
+.sg-strategy-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  width: 100%;
+}
+.sg-strategy-card {
+  min-height: 382px;
+  padding: 62px 42px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff0e6;
+  border-radius: 28px;
+}
+.sg-strategy-card h3 {
+  margin: 0 0 10px;
+  color: #FFA666;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+.sg-strategy-card p {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+}
+/* ======== Plus Symbol ======== */
+.sg-strategy-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffa666;
+  color: #ffffff;
+  font-size: 66px;
+  font-weight: 300;
+  line-height: 1;
+}
+/* ======== Skyline ======== */
+.sg-strategy-skyline {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: end;
+  min-width: 0;
+  margin-left: -110px;
+}
+.sg-strategy-skyline img {
+  display: block;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  object-fit: contain;
+  object-position: right bottom;
+}
+/*========================================================= */
+#uobam_invest_logo2 {
+	padding-right: 20px;
+}
+#ios2_link {
+	padding-right: 20px;
 }
 .appstore-image-left img {
   width: 200px;
 }
 .uobam-app-image img {
   width: 140px;
-}
-#about-cashxtra .container .col-lg-6 {
-  padding-bottom: 100px;
 }
 .open-account {
   font-size: 12.7px;
@@ -1200,14 +1296,13 @@ td.num, th.num {
 }
 #callToAction h1 {
   text-align: center;
-  font-size: 17px;
+  font-size: 30px;
   color: #fff;
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 #callToAction h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 55px;
   color: #fff;
 }
 #callToAction h3 {

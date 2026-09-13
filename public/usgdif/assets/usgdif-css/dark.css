@@ -182,6 +182,40 @@ Default CSS
 .theme-dark .check li {
 	color: #FFF;
 }
+.theme-dark #about-united-sg-dynamic-income-fund {
+	background-color: #1d1d1f;
+}
+.theme-dark #about-united-sg-dynamic-income-fund h2{
+	color: #ffa666!important;
+}
+.theme-dark .united-sg-dynamic-income-fund-singapore-story {
+  background-color: #000000;
+}
+.theme-dark .sg-strategy-card h3 {
+	color: #ffa666!important;
+}
+.theme-dark .sg-strategy-card p {
+	color: #333333!important;
+}
+.theme-dark .singaporeStoryRow2-content h3 {
+   background: linear-gradient(
+    100deg,
+    #f7b9ad 0%,
+    #efd7a2 20%,
+    #c6dcb7 40%,
+    #a1d4d7 60%,
+    #9fc5e5 78%,
+    #c0b5df 100%
+  );
+  background-size: 130% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.theme-dark .united-sg-dynamic-income-fund-singapore-story-content h2, .theme-dark .powerMultiAsset h3 {
+	color: #FFA666!important;
+}
 /*# sourceMappingURL=dark.css.map */
 
 /*================================================
