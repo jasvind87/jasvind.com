@@ -1223,6 +1223,240 @@ What Makes the United SG Dynamic Income Fund Different
   line-height: 1.35;
 }
 /*============================================== */
+/*==============================================
+How the Fund Invests (The 5-Asset Engine)
+=================================================*/
+#sg-fundAssetEngine {
+	background-color: #FFFFFF;
+	padding: 100px 0;
+}
+/* =========================================================
+   FUND ASSET ENGINE
+   ========================================================= */
+
+.sg-fundAssetEngine {
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 70px 36px 60px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.sg-fundAssetEngine-intro {
+  position: relative;
+
+  min-height: 230px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 0 10% 0;
+}
+
+
+.sg-fundAssetEngine-introCopy {
+  position: relative;
+  z-index: 2;
+
+  width: 65%;
+}
+
+
+.sg-fundAssetEngine-introCopy h2 {
+  margin: 0 0 32px;
+
+  color: #333333;
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.15;
+
+  letter-spacing: -0.02em;
+}
+
+
+.sg-fundAssetEngine-introCopy p {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   ILLUSTRATION
+   ========================================================= */
+
+.sg-fundAssetEngine-visual {
+  position: absolute;
+
+  right: 0;
+  bottom: -8px;
+  margin-bottom: -20px;
+  width: 30%;
+
+  z-index: 1;
+}
+
+
+.sg-fundAssetEngine-visual img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+
+/* =========================================================
+   CARD TRACK — DESKTOP
+   ========================================================= */
+
+.sg-fundAssetEngine-track {
+  display: flex;
+  box-sizing: border-box;
+  gap: 28px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  /*
+   * Centres the focused 500px card.
+   * Neighbouring cards remain visible.
+   */
+  padding:
+    24px
+    max(20px, calc((100% - 500px) / 2))
+    26px;
+
+  scrollbar-width: none;
+
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+.sg-fundAssetEngine-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.sg-fundAssetEngine-card {
+  flex: 0 0 500px;
+  box-sizing: border-box;
+  min-height: 415px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 76px 48px 44px;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+
+/* Card colours */
+
+.sg-fundAssetEngine-card--blue {
+  background: #f2f5ff;
+}
+
+
+.sg-fundAssetEngine-card--peach {
+  background: #fff0e6;
+}
+
+
+.sg-fundAssetEngine-card--purple {
+  background: #eeeaff;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.sg-fundAssetEngine-card h3 {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 0 30px;
+
+  color: #ffa666;
+
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.12;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* =========================================================
+   CARD COPY
+   ========================================================= */
+
+.sg-fundAssetEngine-card p {
+  width: 100%;
+
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+
+/* =========================================================
+   CAROUSEL CONTROLS
+   Hidden on desktop
+   ========================================================= */
+
+.sg-fundAssetEngine-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  margin-top: 18px;
+}
+/*============================================== */
 #uobam_invest_logo2 {
   padding-right: 20px;
 }

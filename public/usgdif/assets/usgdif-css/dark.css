@@ -195,6 +195,15 @@ Default CSS
 .theme-dark #whatThisFundDifferent .section-title h2 {
 	color: #ffa666!important;
 }
+.theme-dark #sg-fundAssetEngine {
+	background-color: #000000;
+}
+.theme-dark .sg-fundAssetEngine-card h3 {
+	color: #ffa666!important;
+}
+.theme-dark .sg-fundAssetEngine-card p {
+	color: #333333;
+}
 /*# sourceMappingURL=dark.css.map */
 /*================================================
 Image Selector for light and dark theme

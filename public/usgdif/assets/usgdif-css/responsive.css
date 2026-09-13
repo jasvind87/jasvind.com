@@ -330,79 +330,203 @@ Responsive CSS
   #whatThisFundMeansForYourMoney .section-title h2 {
     font-size: 33px;
   }
- /*---------------------------*/
-	#whatThisFundDifferent {
-		padding: 50px 0;
-	}
-	.sg-thisFundDifferent {
+  /*---------------------------*/
+  #whatThisFundDifferent {
+    padding: 50px 0;
+  }
+  .sg-thisFundDifferent {
     gap: 32px;
-
     padding: 30px 0px;
   }
-
-
   .sg-thisFundDifferent-card {
     min-height: 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 20px;
-
     padding: 34px 24px 36px;
-
     text-align: center;
-
     border-radius: 18px;
-
     box-shadow:
       0 10px 24px rgba(0, 0, 0, 0.14);
   }
-
-
   .sg-thisFundDifferent-icon {
     width: 92px;
     height: 92px;
-
     flex: 0 0 92px;
   }
-
-
   .sg-thisFundDifferent-icon img {
     width: 46px;
     height: 46px;
   }
-
-
   .sg-thisFundDifferent-content {
+    width: 100%;
+  }
+  .sg-thisFundDifferent-content h3 {
+    margin-bottom: 16px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.12;
+  }
+  .sg-thisFundDifferent-content p {
+    max-width: 380px;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .mobile-break {
+    display: inline;
+  }
+  #whatThisFundDifferent .section-title h2 {
+    font-size: 33px;
+  }
+	/*---------------------------*/
+	 .sg-fundAssetEngine {
+    padding: 38px 0 40px;
+  }
+
+
+  /* =====================================================
+     INTRO
+     ===================================================== */
+
+  .sg-fundAssetEngine-intro {
+    min-height: 0;
+
+    display: block;
+
+    padding: 0 20px;
+  }
+
+
+  .sg-fundAssetEngine-introCopy {
     width: 100%;
   }
 
 
-  .sg-thisFundDifferent-content h3 {
-    margin-bottom: 16px;
-    text-align: left;
+  .sg-fundAssetEngine-introCopy h2 {
+    margin-bottom: 20px;
+
+    font-size: 33px;
+
+    line-height: 1.15;
+  }
+
+
+  .sg-fundAssetEngine-introCopy p {
+    max-width: 100%;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+  }
+
+
+  /* Put illustration below intro copy */
+
+  .sg-fundAssetEngine-visual {
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    width: 72%;
+    max-width: 330px;
+
+    margin: 24px -21px -30px auto;
+  }
+
+
+  /* =====================================================
+     CAROUSEL
+     ===================================================== */
+
+  .sg-fundAssetEngine-track {
+    display: flex;
+
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    /*
+     * 84% gives a small preview of the next card.
+     */
+    padding:
+      24px
+      8%
+      22px;
+
+    scrollbar-width: none;
+
+    overscroll-behavior-x: contain;
+
+    touch-action: pan-x;
+  }
+
+
+  .sg-fundAssetEngine-track::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .sg-fundAssetEngine-card {
+    flex: 0 0 500px;
+
+    min-height: 400px;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    padding: 62px 30px 40px;
+
+    border-radius: 24px;
+  }
+
+
+  .sg-fundAssetEngine-card h3 {
+    min-height: auto;
+
+    margin-bottom: 28px;
+
     font-size: 24px;
 
     line-height: 1.12;
   }
 
 
-  .sg-thisFundDifferent-content p {
-    max-width: 380px;
-    text-align: left;
+  .sg-fundAssetEngine-card p {
+    max-width: 330px;
+
     margin: 0 auto;
 
     font-size: 20px;
 
     line-height: 1.4;
   }
-	 .mobile-break {
-    display: inline;
+
+
+  /* =====================================================
+     CONTROLS
+     ===================================================== */
+
+  .sg-fundAssetEngine-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 10px;
   }
-	#whatThisFundDifferent .section-title h2 {
-		font-size: 33px;
+	#sg-fundAssetEngine {
+		padding: 0 0 100px 0;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -573,49 +697,147 @@ Responsive CSS
     margin-top: 8px;
   }
   /*---------------------------*/
-	 .sg-thisFundDifferent {
+  .sg-thisFundDifferent {
     gap: 30px;
-
     padding: 32px 24px;
   }
-
-
   .sg-thisFundDifferent-card {
     min-height: 185px;
-
     gap: 30px;
-
     padding: 32px 34px;
-
     border-radius: 14px;
   }
-
-
   .sg-thisFundDifferent-icon {
     width: 100px;
     height: 100px;
-
     flex-basis: 100px;
   }
-
-
   .sg-thisFundDifferent-icon img {
     width: 50px;
     height: 50px;
   }
-
-
   .sg-thisFundDifferent-content h3 {
     margin-bottom: 10px;
-
     font-size: 27px;
     line-height: 1.15;
   }
-
-
   .sg-thisFundDifferent-content p {
     font-size: 17px;
     line-height: 1.4;
+  }
+	 /*---------------------------*/
+	.sg-fundAssetEngine {
+    padding: 46px 0 44px;
+  }
+
+
+  /* INTRO */
+
+  .sg-fundAssetEngine-intro {
+    min-height: 190px;
+
+    padding: 0 40px;
+  }
+
+
+  .sg-fundAssetEngine-introCopy {
+    width: 68%;
+  }
+
+
+  .sg-fundAssetEngine-introCopy h2 {
+    margin-bottom: 22px;
+
+    font-size: 36px;
+    line-height: 1.18;
+  }
+
+
+  .sg-fundAssetEngine-introCopy p {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+
+  .sg-fundAssetEngine-visual {
+    width: 35%;
+    right: 20px;
+  }
+
+
+  /* =====================================================
+     CAROUSEL
+     ===================================================== */
+
+  .sg-fundAssetEngine-track {
+    display: flex;
+
+    gap: 24px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    /*
+     * Centres a 520px card in the viewport.
+     */
+    padding:
+      18px
+      calc((100vw - 520px) / 2)
+      22px;
+
+    scrollbar-width: none;
+  }
+
+
+  .sg-fundAssetEngine-track::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .sg-fundAssetEngine-card {
+    flex: 0 0 520px;
+
+    min-height: 380px;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    padding: 68px 52px 42px;
+  }
+
+
+  .sg-fundAssetEngine-card h3 {
+    min-height: auto;
+
+    margin-bottom: 28px;
+
+    font-size: 30px;
+  }
+
+
+  .sg-fundAssetEngine-card p {
+    max-width: 430px;
+
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+
+  /* CONTROLS */
+
+  .sg-fundAssetEngine-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    margin-top: 16px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -698,48 +920,144 @@ Responsive CSS
     margin-top: 12px;
   }
   /*---------------------------*/
-	.sg-thisFundDifferent {
+  .sg-thisFundDifferent {
     gap: 36px;
-
     padding: 36px 28px;
   }
-
-
   .sg-thisFundDifferent-card {
     min-height: 205px;
-
     gap: 42px;
-
     padding: 36px 48px;
-
     border-radius: 15px;
   }
-
-
   .sg-thisFundDifferent-icon {
     width: 118px;
     height: 118px;
-
     flex-basis: 118px;
   }
-
-
   .sg-thisFundDifferent-icon img {
     width: 60px;
     height: 60px;
   }
-
-
   .sg-thisFundDifferent-content h3 {
     margin-bottom: 12px;
-
     font-size: 31px;
   }
-
-
   .sg-thisFundDifferent-content p {
     font-size: 19px;
     line-height: 1.38;
+  }
+  /*---------------------------*/
+	 .sg-fundAssetEngine {
+    padding: 54px 0 48px;
+  }
+
+
+  /* INTRO */
+
+  .sg-fundAssetEngine-intro {
+    min-height: 205px;
+
+    padding: 0 54px;
+
+    gap: 30px;
+  }
+
+
+  .sg-fundAssetEngine-introCopy {
+    width: 68%;
+  }
+
+
+  .sg-fundAssetEngine-introCopy h2 {
+    margin-bottom: 24px;
+
+    font-size: 42px;
+  }
+
+
+  .sg-fundAssetEngine-introCopy p {
+    font-size: 19px;
+    line-height: 1.45;
+  }
+
+
+  .sg-fundAssetEngine-visual {
+    width: 34%;
+    right: 24px;
+  }
+
+
+  /* =====================================================
+     CAROUSEL
+     ===================================================== */
+
+  .sg-fundAssetEngine-track {
+    display: flex;
+
+    gap: 26px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    padding:
+      20px
+      calc((100vw - 600px) / 2)
+      24px;
+
+    scrollbar-width: none;
+  }
+
+
+  .sg-fundAssetEngine-track::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .sg-fundAssetEngine-card {
+    flex: 0 0 600px;
+
+    min-height: 390px;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    padding: 74px 64px 46px;
+  }
+
+
+  .sg-fundAssetEngine-card h3 {
+    min-height: auto;
+
+    margin-bottom: 28px;
+
+    font-size: 32px;
+  }
+
+
+  .sg-fundAssetEngine-card p {
+    max-width: 480px;
+
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+
+  /* CONTROLS */
+
+  .sg-fundAssetEngine-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    margin-top: 18px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
@@ -785,5 +1103,111 @@ Responsive CSS
   .sg-thisFundYourMoney-card {
     padding: 92px 60px 20px;
   }
+	.sg-fundAssetEngine-introCopy h2 {
+  font-size: 33px;
+	}
+}
+
+/* =========================================================
+   CAROUSEL ARROWS
+   ========================================================= */
+
+.sg-fundAssetEngine-arrow {
+  width: 46px;
+  height: 46px;
+
+  flex: 0 0 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #ff9d60;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.sg-fundAssetEngine-arrow:hover {
+  background: #ff9d60;
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+
+.sg-fundAssetEngine-arrow:disabled {
+  opacity: 0.3;
+
+  cursor: default;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   DOTS
+   ========================================================= */
+
+.sg-fundAssetEngine-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+
+.sg-fundAssetEngine-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #d5d5d5;
+
+  cursor: pointer;
+
+  transition:
+    width 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.sg-fundAssetEngine-dot.is-active {
+  width: 24px;
+
+  border-radius: 20px;
+
+  background: #ff9d60;
+}
+
+
+/* Keyboard accessibility */
+
+.sg-fundAssetEngine-arrow:focus-visible,
+.sg-fundAssetEngine-dot:focus-visible {
+  outline: 2px solid #ff9d60;
+  outline-offset: 3px;
 }
 /*# sourceMappingURL=responsive.css.map */
