@@ -36,26 +36,15 @@ Responsive CSS
     padding-bottom: 0px;
   }
   .banner-content::before {
-  content: "";
-  position: absolute;
-
-  /* Your chosen wash size */
-  inset: 0;
-
-  z-index: -1;
-
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255,255,255,0.78) 0%,
-    rgba(255,255,255,0.48) 38%,
-    rgba(255,255,255,0.22) 58%,
-    rgba(255,255,255,0) 80%
-  );
-
-  filter: blur(14px);
-
-  pointer-events: none;
-}
+    content: "";
+    position: absolute;
+    /* Your chosen wash size */
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.48) 38%, rgba(255, 255, 255, 0.22) 58%, rgba(255, 255, 255, 0) 80%);
+    filter: blur(14px);
+    pointer-events: none;
+  }
   .main-banner .banner-content {
     text-align: center;
   }
@@ -64,11 +53,11 @@ Responsive CSS
   }
   .main-banner .banner-content h2 {
     font-size: clamp(20px, 5.556vw, 23px);
-	font-weight: 500;
+    font-weight: 500;
   }
-	#home .card {
-		margin: 0 10px 20px 10px;
-	}
+  #home .card {
+    margin: 0 10px 20px 10px;
+  }
   .main-banner .banner-image {
     margin-top: 50px;
   }
@@ -107,28 +96,25 @@ Responsive CSS
     padding-top: 10px;
     padding-bottom: 35px;
   }
-	.border-right {
-	border-right: none;	
-	}
+  .border-right {
+    border-right: none;
+  }
   .hero-yield {
     width: 280px;
   }
-
   .hero-yield::before {
     inset: 0;
   }
-
   .yield-label {
     font-size: 21px;
   }
-	.yield-label {
-		margin-bottom: 30px;
-	}
+  .yield-label {
+    margin-bottom: 30px;
+  }
   .yield-number-svg {
     width: 120px;
     height: 150px;
   }
-
   .four-base, .four-trace {
     font-size: 230px;
   }
@@ -178,67 +164,46 @@ Responsive CSS
   .appstore-logo, .playstore-logo {
     width: 125px;
   }
-	#uobam_invest_logo2, #ios2_link {
-		padding-right: 0;
-	}
+  #uobam_invest_logo2, #ios2_link {
+    padding-right: 0;
+  }
   .faq-accordion-content .accordion .accordion-content {
     font-size: 12px;
   }
   .faq-accordion-content .accordion .accordion-title {
     font-size: 14px;
   }
-	/*------------------------------*/
-	 .sg-strategy {
+  /*------------------------------*/
+  .sg-strategy {
     padding: 32px 20px 0;
   }
-
-
   .sg-strategy-inner {
     display: flex;
     flex-direction: column;
-
     gap: 24px;
   }
-
-
   .sg-strategy-cards {
     display: flex;
     flex-direction: column;
-
     /* Remove gap because the + now controls the spacing */
     gap: 0;
   }
-
-
   .sg-strategy-card {
     width: 100%;
-
     min-height: auto;
-
     padding: 38px 24px 40px;
-
     border-radius: 22px;
   }
-
-
   .sg-strategy-card h3 {
     margin-bottom: 26px;
-
     font-size: clamp(27px, calc(5.556vw + 7px), 30px);
-
     line-height: 1.12;
   }
-
-
   .sg-strategy-card p {
     max-width: 360px;
-
     font-size: clamp(20px, 5.556vw, 23px);
-
     line-height: 1.4;
   }
-
-
   /*
    * On mobile the + sits between the
    * two vertically stacked cards.
@@ -246,87 +211,198 @@ Responsive CSS
   .sg-strategy-plus {
     /* Remove desktop absolute positioning */
     position: relative;
-
     top: auto;
     left: auto;
-
     transform: none;
-
     /* Centre horizontally */
     align-self: center;
-
     /* Size */
     width: 62px;
     height: 62px;
-
     font-size: 43px;
-
     /*
      * Controls distance between the two cards.
      * Negative margin lets the circle sit neatly
      * between them.
      */
     margin: -10px 0;
-
     z-index: 5;
-
     flex-shrink: 0;
   }
-
-
   .sg-strategy-skyline {
     width: 100%;
-
     justify-content: flex-end;
-
     margin-top: 4px;
   }
-
-
   .sg-strategy-skyline img {
     width: 82%;
     max-width: 390px;
-
     margin-right: -14px;
   }
-	#about-united-sg-dynamic-income-fund {
-		padding: 50px 5px;
+  /*---------------------------*/
+  .sg-thisFundYourMoney-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 82px;
+    padding: 50px 0px 30px;
+  }
+  .sg-thisFundYourMoney-card {
+    width: 100%;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 72px 24px 38px;
+    border-radius: 22px;
+  }
+  /* Icon always centred relative to its own card */
+  .sg-thisFundYourMoney-icon {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 96px;
+    height: 96px;
+  }
+  .sg-thisFundYourMoney-icon img {
+    width: 48px;
+    height: 48px;
+  }
+  .sg-thisFundYourMoney-card h3 {
+    margin-bottom: 26px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.12;
+    min-height: 0;
+  }
+  .sg-thisFundYourMoney-card p, .sg-thisFundYourMoney-list {
+    max-width: 370px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .sg-thisFundYourMoney-list {
+    margin-top: 4px;
+  }
+  /*---------------------------*/
+  #about-united-sg-dynamic-income-fund {
+    padding: 50px 5px;
+  }
+  #about-united-sg-dynamic-income-fund h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+  .aboutIntro {
+    text-align: left;
+  }
+  #united-sg-dynamic-income-fund-singapore-story {
+    padding: 50px 5px;
+  }
+  .united-sg-dynamic-income-fund-singapore-story-image {
+    width: 70%;
+    margin: auto;
+  }
+  .united-sg-dynamic-income-fund-singapore-story-content {
+    padding-left: 0;
+  }
+  .united-sg-dynamic-income-fund-singapore-story-content h2 {
+    font-size: 33px;
+    padding-top: 30px;
+  }
+  .singaporeStoryRow2 {
+    padding-top: 75px;
+  }
+  .borderBottomDashed::after {
+    border: none;
+  }
+  .powerMultiAsset h3 {
+    font-size: 33px;
+  }
+  #callToAction h1 {
+    font-size: 20px;
+  }
+  #callToAction h2 {
+    font-size: 40px;
+  }
+  .powerMultiAsset {
+    padding-top: 30px;
+  }
+  #whatThisFundMeansForYourMoney {
+    padding: 50px 0;
+  }
+  #whatThisFundMeansForYourMoney .section-title h2 {
+    font-size: 33px;
+  }
+ /*---------------------------*/
+	#whatThisFundDifferent {
+		padding: 50px 0;
 	}
-	#about-united-sg-dynamic-income-fund h2 {
-		font-size: 30px;
-		text-align: left;
-	}
-	.aboutIntro {
-		text-align: left;
-	}
-	#united-sg-dynamic-income-fund-singapore-story {
-		padding: 50px 5px;
-	}
-	.united-sg-dynamic-income-fund-singapore-story-image {
-		width: 70%;
-		margin: auto;
-	}
-	.united-sg-dynamic-income-fund-singapore-story-content {
-		padding-left: 0;
-	}
-	.united-sg-dynamic-income-fund-singapore-story-content h2 {
+	.sg-thisFundDifferent {
+    gap: 32px;
+
+    padding: 30px 0px;
+  }
+
+
+  .sg-thisFundDifferent-card {
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 34px 24px 36px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow:
+      0 10px 24px rgba(0, 0, 0, 0.14);
+  }
+
+
+  .sg-thisFundDifferent-icon {
+    width: 92px;
+    height: 92px;
+
+    flex: 0 0 92px;
+  }
+
+
+  .sg-thisFundDifferent-icon img {
+    width: 46px;
+    height: 46px;
+  }
+
+
+  .sg-thisFundDifferent-content {
+    width: 100%;
+  }
+
+
+  .sg-thisFundDifferent-content h3 {
+    margin-bottom: 16px;
+    text-align: left;
+    font-size: 24px;
+
+    line-height: 1.12;
+  }
+
+
+  .sg-thisFundDifferent-content p {
+    max-width: 380px;
+    text-align: left;
+    margin: 0 auto;
+
+    font-size: 20px;
+
+    line-height: 1.4;
+  }
+	 .mobile-break {
+    display: inline;
+  }
+	#whatThisFundDifferent .section-title h2 {
 		font-size: 33px;
-		padding-top: 30px;
-	}
-	.singaporeStoryRow2 {
-		padding-top: 75px;
-	}
-	.borderBottomDashed::after {
-		border: none;
-	}
-	.powerMultiAsset h3 {
-		font-size: 33px;
-	}
-	#callToAction h1 {
-		font-size: 20px;
-	}
-	#callToAction h2 {
-		font-size: 40px;
 	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -421,75 +497,125 @@ Responsive CSS
   .united-sg-dynamic-income-fund p {
     font-size: 14px;
   }
-	/*----------------------------*/
-	.sg-strategy {
+  /*----------------------------*/
+  .sg-strategy {
     padding: 40px 24px 0;
   }
-
-
   .sg-strategy-inner {
     display: flex;
     flex-direction: column;
-
     gap: 30px;
   }
-
-
   .sg-strategy-content {
     width: 100%;
   }
-
-
   .sg-strategy-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 34px;
   }
-
-
   .sg-strategy-card {
     min-height: 320px;
-
     padding: 44px 28px 34px;
-
     border-radius: 22px;
   }
-
-
   .sg-strategy-card h3 {
     margin-bottom: 30px;
-
     font-size: 29px;
     line-height: 1.1;
   }
-
-
   .sg-strategy-card p {
     font-size: 18px;
     line-height: 1.4;
   }
-
-
   .sg-strategy-plus {
     width: 70px;
     height: 70px;
-
     font-size: 48px;
   }
-
-
   .sg-strategy-skyline {
     width: 100%;
-
     justify-content: flex-end;
-
     margin-top: -10px;
   }
-
-
   .sg-strategy-skyline img {
     width: 48%;
     max-width: 440px;
+  }
+  /*---------------------------*/
+  .sg-thisFundYourMoney-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 82px;
+    padding: 100px 0px 32px;
+  }
+  .sg-thisFundYourMoney-card {
+    min-height: 365px;
+    padding: 72px 26px 34px;
+    border-radius: 22px;
+  }
+  .sg-thisFundYourMoney-icon {
+    width: 102px;
+    height: 102px;
+  }
+  .sg-thisFundYourMoney-icon img {
+    width: 52px;
+    height: 52px;
+  }
+  .sg-thisFundYourMoney-card h3 {
+    font-size: 25px;
+    line-height: 1.12;
+  }
+  .sg-thisFundYourMoney-card p, .sg-thisFundYourMoney-list {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .sg-thisFundYourMoney-list {
+    margin-top: 8px;
+  }
+  /*---------------------------*/
+	 .sg-thisFundDifferent {
+    gap: 30px;
+
+    padding: 32px 24px;
+  }
+
+
+  .sg-thisFundDifferent-card {
+    min-height: 185px;
+
+    gap: 30px;
+
+    padding: 32px 34px;
+
+    border-radius: 14px;
+  }
+
+
+  .sg-thisFundDifferent-icon {
+    width: 100px;
+    height: 100px;
+
+    flex-basis: 100px;
+  }
+
+
+  .sg-thisFundDifferent-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .sg-thisFundDifferent-content h3 {
+    margin-bottom: 10px;
+
+    font-size: 27px;
+    line-height: 1.15;
+  }
+
+
+  .sg-thisFundDifferent-content p {
+    font-size: 17px;
+    line-height: 1.4;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -508,56 +634,112 @@ Responsive CSS
   .main-banner .banner-content h1 {
     font-size: 5.4rem;
   }
-	/*---------------------------*/
-	.sg-strategy {
+  /*---------------------------*/
+  .sg-strategy {
     padding: 44px 28px 48px;
   }
-
-
   .sg-strategy-inner {
     grid-template-columns: minmax(0, 2fr) minmax(260px, 0.75fr);
     gap: 22px;
   }
-
-
   .sg-strategy-cards {
     gap: 36px;
   }
-
-
   .sg-strategy-card {
     min-height: 330px;
-
     padding: 48px 30px 36px;
-
     border-radius: 24px;
   }
-
-
   .sg-strategy-card h3 {
     margin-bottom: 34px;
-
     font-size: 31px;
     line-height: 1.08;
   }
-
-
   .sg-strategy-card p {
     font-size: 19px;
     line-height: 1.38;
   }
-
-
   .sg-strategy-plus {
     width: 76px;
     height: 76px;
-
     font-size: 52px;
+  }
+  .sg-strategy-skyline img {
+    max-width: 400px;
+  }
+  /*---------------------------*/
+  .sg-thisFundYourMoney-cards {
+    column-gap: 40px;
+    row-gap: 90px;
+    padding: 100px 0px 35px;
+  }
+  .sg-thisFundYourMoney-card {
+    min-height: 390px;
+    padding: 82px 38px 20px;
+    border-radius: 24px;
+  }
+  .sg-thisFundYourMoney-icon {
+    width: 118px;
+    height: 118px;
+  }
+  .sg-thisFundYourMoney-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  .sg-thisFundYourMoney-card h3 {
+    font-size: 31px;
+    line-height: 1.1;
+  }
+  .sg-thisFundYourMoney-card p, .sg-thisFundYourMoney-list {
+    font-size: 19px;
+    line-height: 1.38;
+  }
+  .sg-thisFundYourMoney-list {
+    margin-top: 12px;
+  }
+  /*---------------------------*/
+	.sg-thisFundDifferent {
+    gap: 36px;
+
+    padding: 36px 28px;
   }
 
 
-  .sg-strategy-skyline img {
-    max-width: 400px;
+  .sg-thisFundDifferent-card {
+    min-height: 205px;
+
+    gap: 42px;
+
+    padding: 36px 48px;
+
+    border-radius: 15px;
+  }
+
+
+  .sg-thisFundDifferent-icon {
+    width: 118px;
+    height: 118px;
+
+    flex-basis: 118px;
+  }
+
+
+  .sg-thisFundDifferent-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .sg-thisFundDifferent-content h3 {
+    margin-bottom: 12px;
+
+    font-size: 31px;
+  }
+
+
+  .sg-thisFundDifferent-content p {
+    font-size: 19px;
+    line-height: 1.38;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
@@ -579,23 +761,29 @@ Responsive CSS
   .earn-more-header {
     font-size: 40px !important;
   }
-	.main-banner .banner-content h2 {
-		font-size: 30px;
-	}
+  .main-banner .banner-content h2 {
+    font-size: 30px;
+  }
   #about-united-sg-dynamic-income-fund h2 {
-  font-size: 60px;
-	  line-height: 1.2;
-	  font-weight: 400;
-}
-	.singaporeStoryRow2 h3 {
-		font-size: 25px;
-	}
-	/*---------------------------*/
-	.sg-strategy-card h3 {
-		font-size: 27px;
-	}
-	.sg-strategy-card p {
-		font-size: 17px;
-	}
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  .singaporeStoryRow2 h3 {
+    font-size: 25px;
+  }
+  /*---------------------------*/
+  .sg-strategy-card h3, .sg-thisFundYourMoney-card h3 {
+    font-size: 27px;
+  }
+  .sg-strategy-card p, .sg-thisFundYourMoney-card p {
+    font-size: 17px;
+  }
+  .sg-thisFundYourMoney-card {
+    min-height: 360px;
+  }
+  .sg-thisFundYourMoney-card {
+    padding: 92px 60px 20px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

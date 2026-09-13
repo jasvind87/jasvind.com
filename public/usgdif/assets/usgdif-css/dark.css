@@ -7,20 +7,17 @@ Default CSS
   right: 15px;
   bottom: 13px;
 }
-
 .switch-box .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
-
 .switch-box .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .switch-box .slider {
   position: absolute;
   cursor: pointer;
@@ -32,7 +29,6 @@ Default CSS
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .switch-box .slider:before {
   position: absolute;
   content: "";
@@ -46,167 +42,129 @@ Default CSS
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-box-shadow: 0 0px 15px #2020203d;
-          box-shadow: 0 0px 15px #2020203d;
+  box-shadow: 0 0px 15px #2020203d;
   background: url("../../assets/images-n/night.png");
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .switch-box input:checked + .slider {
   background-color: #cbc1c1;
 }
-
 .switch-box input:focus + .slider {
   background-color: #4d4949;
 }
-
 .switch-box input:checked + .slider:before {
   -webkit-transform: translateX(24px);
-          transform: translateX(24px);
+  transform: translateX(24px);
   background: url("../../assets/images-n/sunny.png");
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .switch-box .slider.round {
   border-radius: 50px;
 }
-
 .switch-box .slider.round:before {
   border-radius: 50%;
 }
-
 .theme-dark body {
   background-color: #202126;
   color: #f1f1f1;
 }
-
 .theme-dark p {
   color: #f1f1f1;
 }
-
 .theme-dark .banner-content p {
   color: #f1f1f1;
 }
-
 .theme-dark p a {
   color: #f1f1f1 !important;
 }
-
 .theme-dark p a:hover {
   color: #FFFFFF !important;
 }
-
 .theme-dark a {
   color: #f1f1f1 !important;
 }
-
 .theme-dark a:hover {
   color: #FFFFFF !important;
 }
-
 .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6 {
   color: #ffffff !important;
 }
-
 .theme-dark h1 a, .theme-dark h2 a, .theme-dark h3 a, .theme-dark h4 a, .theme-dark h5 a, .theme-dark h6 a {
   color: #ffffff !important;
 }
-
 .theme-dark h1 a:hover, .theme-dark h2 a:hover, .theme-dark h3 a:hover, .theme-dark h4 a:hover, .theme-dark h5 a:hover, .theme-dark h6 a:hover {
   color: #FFFFFF !important;
 }
-
 .theme-dark .navbar-light {
   background-color: #FFF !important;
 }
-
 .theme-dark .main-banner {
   background-image: unset;
   background-color: #202126;
 }
-
 .theme-dark .faq-accordion-content .accordion .accordion-title {
   background-color: #0e0e0e;
 }
-
 .theme-dark .faq-accordion-content .accordion .accordion-content {
   background-color: #0e0e0e;
 }
-
 .theme-dark .copy-right {
   background-color: #0e0e0e;
 }
-
 .theme-dark .background-grey {
   background-color: #35363e;
 }
-
 .theme-dark .main-banner {
   background-image: url("../../assets/usgdif-images/main-banner.webp");
 }
-
 .theme-dark .striped-pattern {
-    /* Create a linear gradient with stripes */
-    background-image: repeating-linear-gradient(
-      135deg,
-      #202126,  /* Color of the stripe */
-      #202126 10px,  /* Width of the stripe */
-      #35363e 10px,  /* Color of the space between stripes */
-      #35363e 20px  /* Width of the space */
+  /* Create a linear gradient with stripes */
+  background-image: repeating-linear-gradient(135deg, #202126, /* Color of the stripe */ #202126 10px, /* Width of the stripe */ #35363e 10px, /* Color of the space between stripes */ #35363e 20px /* Width of the space */
     );
-    
-    /* If you want the stripes to cover the entire width of the page */
-    width: 100%;
-	margin: 0 auto;
-  }
-.theme-dark .color-5c55eb {
-	color: #bbaeff!important;
+  /* If you want the stripes to cover the entire width of the page */
+  width: 100%;
+  margin: 0 auto;
 }
-
+.theme-dark .color-5c55eb {
+  color: #bbaeff !important;
+}
 .theme-dark #getstarted {
-	background-color: #202126;
+  background-color: #202126;
 }
 .theme-dark #faq {
-	background-color: #35363e;
+  background-color: #35363e;
 }
 .theme-dark .card {
-	background: transparent;
+  background: transparent;
 }
 .theme-dark .card .num {
-	color: #bbaeff;
+  color: #bbaeff;
 }
 .theme-dark .calloutParagraph {
-	color: #646464;
+  color: #646464;
 }
 .theme-dark .check li {
-	color: #FFF;
+  color: #FFF;
 }
 .theme-dark #about-united-sg-dynamic-income-fund {
-	background-color: #1d1d1f;
+  background-color: #1d1d1f;
 }
-.theme-dark #about-united-sg-dynamic-income-fund h2{
-	color: #ffa666!important;
+.theme-dark #about-united-sg-dynamic-income-fund h2 {
+  color: #ffa666 !important;
 }
 .theme-dark .united-sg-dynamic-income-fund-singapore-story {
   background-color: #000000;
 }
 .theme-dark .sg-strategy-card h3 {
-	color: #ffa666!important;
+  color: #ffa666 !important;
 }
 .theme-dark .sg-strategy-card p {
-	color: #333333!important;
+  color: #333333 !important;
 }
 .theme-dark .singaporeStoryRow2-content h3 {
-   background: linear-gradient(
-    100deg,
-    #f7b9ad 0%,
-    #efd7a2 20%,
-    #c6dcb7 40%,
-    #a1d4d7 60%,
-    #9fc5e5 78%,
-    #c0b5df 100%
-  );
+  background: linear-gradient(100deg, #f7b9ad 0%, #efd7a2 20%, #c6dcb7 40%, #a1d4d7 60%, #9fc5e5 78%, #c0b5df 100%);
   background-size: 130% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -214,11 +172,30 @@ Default CSS
   color: transparent;
 }
 .theme-dark .united-sg-dynamic-income-fund-singapore-story-content h2, .theme-dark .powerMultiAsset h3 {
-	color: #FFA666!important;
+  color: #FFA666 !important;
+}
+.theme-dark .sg-thisFundYourMoney-card h3 {
+  color: #ffa666 !important;
+}
+.theme-dark .sg-thisFundYourMoney-card p {
+  color: #333333;
+}
+.theme-dark #whatThisFundMeansForYourMoney {
+  background-color: #35363e;
+}
+.theme-dark #whatThisFundMeansForYourMoney .section-title h2 {
+  color: #ffa666!important;
+}
+.theme-dark #whatThisFundDifferent {
+	background:#000000;
+}
+.theme-dark .sg-thisFundDifferent-content h3 {
+	color: #ffa666!important;
+}
+.theme-dark #whatThisFundDifferent .section-title h2 {
+	color: #ffa666!important;
 }
 /*# sourceMappingURL=dark.css.map */
-
 /*================================================
 Image Selector for light and dark theme
 =================================================*/
-

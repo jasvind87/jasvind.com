@@ -867,7 +867,7 @@ Stripe Pattern
 About United SG Dynamic Income Fund
 =================================================*/
 #about-united-sg-dynamic-income-fund {
-	padding-top: 100px;
+  padding: 100px 0;
 }
 /*================================================
 Singapore Story
@@ -920,10 +920,10 @@ Singapore Story
   left: 10px;
 }
 .powerMultiAsset {
-	padding-top: 100px;
+  padding-top: 100px;
 }
-.powerMultiAsset h3{
-	font-size: 40px;
+.powerMultiAsset h3 {
+  font-size: 40px;
   font-weight: 400;
   text-align: left;
   color: #333333;
@@ -1022,12 +1022,212 @@ Singapore Story
   object-fit: contain;
   object-position: right bottom;
 }
-/*========================================================= */
+/*============================================== */
+/*==============================================
+What This Fund Means For Your Money
+=================================================*/
+#whatThisFundMeansForYourMoney {
+  padding: 100px 0;
+  background-color: #fffaf2;
+}
+#whatThisFundMeansForYourMoney .section-title h2 {
+  font-size: 40px;
+  color: #333333;
+  font-weight: 400;
+}
+#whatThisFundMeansForYourMoney .sectionIntro {
+  font-size: 20px;
+  text-align: center;
+}
+/* ===== THIS FUND, YOUR MONEY — CARDS ===== */
+.sg-thisFundYourMoney-cards {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 58px;
+  row-gap: 112px;
+  padding: 100px 30px 0px;
+}
+/* ===== INDIVIDUAL CARD ===== */
+.sg-thisFundYourMoney-card {
+  position: relative;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 92px 60px 20px;
+  text-align: center;
+  background: #fff0e6;
+  border-radius: 28px;
+}
+/* ===== ICON CIRCLE ===== */
+.sg-thisFundYourMoney-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  width: 136px;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffa666;
+  z-index: 2;
+}
+.sg-thisFundYourMoney-icon img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+/* ===== Headings ===== */
+.sg-thisFundYourMoney-card h3 {
+  margin: 0 0 10px;
+  min-height: 72px;
+  color: #ffa666;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+/* ===== Body Copy ===== */
+.sg-thisFundYourMoney-card p {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+/* ===== ASSET-CLASS LIST ===== */
+.sg-thisFundYourMoney-list {
+  width: 100%;
+  margin: 18px auto 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+/*============================================== */
+/*==============================================
+What Makes the United SG Dynamic Income Fund Different
+=================================================*/
+#whatThisFundDifferent {
+	padding: 100px 0;
+	background:#FFFFFF;
+}
+#whatThisFundDifferent .section-title h2 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #333333;
+}
+#whatThisFundDifferent .sectionIntro {
+	font-size: 20px;
+	text-align: center;
+}
+/* ===== THIS FUND DIFFERENT ===== */
+.sg-thisFundDifferent {
+  width: 100%;
+  max-width: 1560px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 44px;
+
+  padding: 40px 36px;
+}
+/* ===== CARD ===== */
+.sg-thisFundDifferent-card {
+  width: 100%;
+
+  min-height: 230px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 54px;
+
+  padding: 42px 68px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.16);
+
+}
+/* ===== ICON ===== */
+.sg-thisFundDifferent-icon {
+  width: 136px;
+  height: 136px;
+
+  flex: 0 0 136px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffa666;
+}
+.sg-thisFundDifferent-icon img {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+/* ===== CONTENT ===== */
+.sg-thisFundDifferent-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* Heading */
+.sg-thisFundDifferent-content h3 {
+  margin: 0 0 14px;
+
+  color: #ffa666;
+
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1.12;
+
+  letter-spacing: -0.02em;
+}
+.mobile-break {
+  display: none;
+}
+
+/* Body */
+.sg-thisFundDifferent-content p {
+  max-width: 1100px;
+
+  margin: 0;
+
+  color: #000000;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+/*============================================== */
 #uobam_invest_logo2 {
-	padding-right: 20px;
+  padding-right: 20px;
 }
 #ios2_link {
-	padding-right: 20px;
+  padding-right: 20px;
 }
 .appstore-image-left img {
   width: 200px;
@@ -1131,21 +1331,7 @@ Singapore Story
   font-weight: 800;
   letter-spacing: .1em;
 }
-/* Heading */
-.glass-card h3 {
-  color: #fff;
-  font-size: 21px;
-  line-height: 1.3;
-  margin-bottom: 12px;
-}
-/* Body */
-.glass-card p {
-  color: rgba(255, 255, 255, 0.82);
-  line-height: 1.6;
-}
-.glass-card p:last-child {
-  margin-bottom: 0;
-}
+
 /* Hover */
 .glass-card:hover {
   transform: translateY(-5px);
