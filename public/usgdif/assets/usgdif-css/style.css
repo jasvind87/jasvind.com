@@ -601,11 +601,12 @@ Faq Area CSS
   padding-bottom: 15px;
 }
 #faq ul {
-	list-style-type: disc;
-	font-size: 17px;
+  list-style-type: disc;
+  font-size: 17px;
+  padding-left: 1rem;
 }
 #faq p, #faq a {
-	font-size: 17px;
+  font-size: 17px;
 }
 /*================================================
 Team Area CSS
@@ -816,7 +817,7 @@ Stripe Pattern
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.17);
 }
 .riskRating {
-	color: #00a19b;
+  color: #00a19b;
 }
 #getstarted h2 {
   font-weight: 300;
@@ -830,7 +831,7 @@ Stripe Pattern
   font-size: 19px;
 }
 .client-testimonial {
-  background-image: url("../../assets/usgdif-images/why-dynamic-income-fund-bg.webp");
+  background-image: url("../../assets/usgdif-images/main-banner.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -927,7 +928,7 @@ Singapore Story
   gap: 25px;
 }
 .singaporeStoryDisclaimer {
-	font-size: 13px;
+  font-size: 13px;
 }
 .united-sg-dynamic-income-fund-singapore-story-image {
   text-align: center;
@@ -963,95 +964,62 @@ Singapore Story
 /* =========================================================
    SINGAPORE EQUITIES RESILIENT
    ========================================================= */
-
 .sg-EquitiesResilient {
   width: 100%;
   max-width: 1800px;
-
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(600px, 1.15fr);
-
   align-items: center;
-
   gap: 80px;
-
   padding: 100px 0 0 0;
 }
-
-
 /* =========================================================
    LEFT CONTENT
    ========================================================= */
-
 .sg-EquitiesResilient-content {
   width: 100%;
 }
-
-
 .sg-EquitiesResilient-content h3 {
   max-width: 780px;
-
   margin: 0;
-
   color: #333333;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 1.2;
-
   letter-spacing: -0.01em;
 }
-
-
 /* =========================================================
    SOURCE
    ========================================================= */
-
 .sg-EquitiesResilient-source {
   max-width: 780px;
-
   margin: 88px 0 0;
-
   color: #4a4a4a;
-
   font-size: 13px;
   font-weight: 400;
   line-height: 1.4;
 }
 .sg-EquitiesResilient-source2 {
-	display: none;
+  display: none;
 }
-
-
 /* =========================================================
    CHART CONTAINER
    ========================================================= */
-
 .sg-EquitiesResilient-chart {
   width: 100%;
-
   padding: 54px 60px 48px;
-
   background: #FFFFFF;
-
   border-radius: 16px;
-
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.16);
-
   box-sizing: border-box;
 }
-
-
 .sg-EquitiesResilient-chart img {
   display: block;
-
   width: 100%;
   max-width: 760px;
   height: auto;
-
   margin: 0 auto;
 }
 .powerMultiAsset {
@@ -1198,11 +1166,11 @@ What This Fund Means For Your Money
   border-radius: 28px;
 }
 .sg-thisFundYourMoney-disclaimer {
-	padding-top: 75px;
-	font-size: 13px;
-	width: 75%;
-	margin: auto auto;
-	text-align: center
+  padding-top: 75px;
+  font-size: 13px;
+  width: 75%;
+  margin: auto auto;
+  text-align: center
 }
 /* ===== ICON CIRCLE ===== */
 .sg-thisFundYourMoney-icon {
@@ -1731,18 +1699,18 @@ FUND ALLOCATION
   z-index: 1;
 }
 #fundDocuments {
-	padding: 100px 0;
+  padding: 100px 0;
 }
 /* Image */
 #fundDocuments .glass-card img {
-	margin: 0 auto;
-	width: 130px;
-	padding-bottom: 25px;
+  margin: 0 auto;
+  width: 130px;
+  padding-bottom: 25px;
 }
 #getstarted .glass-card img {
-	margin: 0 auto;
-	width: 100%;
-	padding-bottom: 25px;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 25px;
 }
 /* Icon container */
 .glass-card .num {
@@ -1796,11 +1764,11 @@ td.num, th.num {
   text-align: right;
 }
 #fundDocuments {
-	background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 #fundDocuments h3 {
   font-size: 22px;
-	text-align: center;
+  text-align: center;
 }
 #fundDocuments .card {
   height: 100%;
