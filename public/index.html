@@ -4,210 +4,572 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jasvind — Marketing &amp; Communications</title>
-<meta name="description" content="Jasvind — marketing and communications leader in asset management, based in Singapore.">
-<meta property="og:title" content="Jasvind">
-<meta property="og:description" content="Marketing and communications leader in asset management. Singapore.">
+<meta name="description" content="Jasvind Singh — marketing and communications leader in asset management. Brand, growth and regulated financial marketing across APAC. Based in Singapore.">
+<meta name="theme-color" content="#08080A">
+<link rel="canonical" href="https://jasvind.com/">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://jasvind.com">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A0A0C'/%3E%3Ctext x='50' y='70' font-family='Helvetica,Arial' font-size='58' font-weight='700' fill='%23FF6A3D' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
+<meta property="og:url" content="https://jasvind.com/">
+<meta property="og:title" content="Jasvind — Marketing &amp; Communications">
+<meta property="og:description" content="Marketing and communications leader in asset management. Brand, growth and regulated financial marketing across APAC.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2308080A'/%3E%3Ctext x='50' y='71' font-family='Georgia,serif' font-size='60' font-style='italic' fill='%23FF6A3D' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Jasvind Singh","url":"https://jasvind.com/","jobTitle":"Head of Marketing & Communications","address":{"@type":"PostalAddress","addressLocality":"Singapore"},"sameAs":["https://www.linkedin.com/in/jasvind","https://www.facebook.com/jasvind","https://www.instagram.com/iamjasvind","https://x.com/jasvind"]}
+</script>
+
 <style>
-  :root{
-    --bg:#08080a;
-    --ink:#f4f2ef;
-    --muted:#8e8b87;
-    --line:rgba(244,242,239,.12);
-    --accent:#ff6a3d;
-    --accent-2:#ffb45c;
-    --font:"Inter Tight","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  }
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --bg:#08080a;
+  --bg-2:#0d0d10;
+  --ink:#f5f3f0;
+  --ink-2:#a8a49f;
+  --ink-3:#6e6a66;
+  --line:rgba(245,243,240,.10);
+  --line-2:rgba(245,243,240,.06);
+  --accent:#ff6a3d;
+  --accent-2:#ffb45c;
 
-  *,*::before,*::after{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--font);
-    font-size:16px;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-  }
+  --sans:"Inter Tight","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
 
-  /* ---- ambient light + grain ---- */
-  .glow{
-    position:fixed; inset:-20% -20% auto -20%; height:120vh;
-    background:
-      radial-gradient(46vw 46vw at 18% 12%, rgba(255,106,61,.22), transparent 62%),
-      radial-gradient(40vw 40vw at 84% 78%, rgba(90,120,255,.16), transparent 64%);
-    filter:blur(20px);
-    pointer-events:none;
-    animation:drift 22s ease-in-out infinite alternate;
-  }
-  @keyframes drift{
-    from{transform:translate3d(-2%,-1%,0) scale(1)}
-    to{transform:translate3d(3%,2%,0) scale(1.08)}
-  }
-  .grain{
-    position:fixed; inset:0; pointer-events:none; opacity:.045; mix-blend-mode:overlay;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
+  --gut:clamp(20px,4.5vw,64px);
+  --maxw:1240px;
+  --ease:cubic-bezier(.22,.65,.24,1);
+}
 
-  /* ---- layout ---- */
-  .page{
-    position:relative; z-index:1;
-    min-height:100svh;
-    display:grid;
-    grid-template-rows:auto 1fr auto;
-    padding:clamp(20px,4vw,44px);
-    max-width:1180px;
-    margin:0 auto;
-  }
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font:400 16px/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--accent);color:#0a0a0a}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
 
-  header,footer{
-    display:flex; align-items:center; justify-content:space-between;
-    gap:16px; flex-wrap:wrap;
-    font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--muted);
-  }
-  .mark{color:var(--ink); font-weight:600; letter-spacing:.14em}
-  .dot{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--accent); margin-right:9px; vertical-align:middle;
-       box-shadow:0 0 0 0 rgba(255,106,61,.55); animation:pulse 2.8s ease-out infinite}
-  @keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(255,106,61,.5)}
-    70%{box-shadow:0 0 0 9px rgba(255,106,61,0)}
-    100%{box-shadow:0 0 0 0 rgba(255,106,61,0)}
-  }
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:var(--gut);top:-100px;z-index:99;background:var(--accent);color:#0a0a0a;
+      padding:10px 16px;border-radius:8px;font-weight:600;transition:top .2s}
+.skip:focus{top:14px}
 
-  main{
-    display:flex; flex-direction:column; justify-content:center;
-    padding:clamp(48px,10vh,120px) 0;
-  }
+/* ============================================================
+   WEBGL STAGE
+   ============================================================ */
+.stage{position:fixed;inset:0;z-index:0;pointer-events:none;
+  /* CSS fallback paints immediately and shows if WebGL is unavailable */
+  background:
+    radial-gradient(60vw 60vw at 15% 10%,rgba(255,106,61,.20),transparent 60%),
+    radial-gradient(50vw 50vw at 85% 80%,rgba(120,90,255,.13),transparent 62%),
+    var(--bg);
+}
+.stage canvas{width:100%;height:100%;display:block}
+.stage::after{ /* vignette + scrim so type always wins */
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(100deg,rgba(8,8,10,.86) 0%,rgba(8,8,10,.62) 28%,rgba(8,8,10,.12) 62%,transparent 100%),
+    radial-gradient(120% 90% at 50% 45%,transparent 28%,rgba(8,8,10,.50) 76%,rgba(8,8,10,.88) 100%),
+    linear-gradient(180deg,rgba(8,8,10,.45) 0%,transparent 24%,transparent 58%,rgba(8,8,10,.80) 100%);
+}
+.veil{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-  .eyebrow{
-    font-size:.8rem; letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
-    margin:0 0 clamp(16px,2.5vh,26px);
-  }
+.shell{position:relative;z-index:2}
 
-  h1{
-    margin:0;
-    font-size:clamp(4rem,17vw,13rem);
-    font-weight:800;
-    letter-spacing:-.045em;
-    line-height:.82;
-    background:linear-gradient(96deg,var(--ink) 0%,var(--ink) 42%,var(--accent-2) 74%,var(--accent) 100%);
-    -webkit-background-clip:text; background-clip:text;
-    color:transparent;
-  }
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:16px var(--gut);
+  transition:background .4s var(--ease),border-color .4s var(--ease),backdrop-filter .4s;
+  border-bottom:1px solid transparent}
+.nav.stuck{background:rgba(8,8,10,.72);backdrop-filter:blur(14px) saturate(140%);border-bottom-color:var(--line-2)}
+.brand{font:600 .84rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.brand em{font-style:normal;color:var(--accent)}
+.navlinks{display:flex;align-items:center;gap:26px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.navlinks a{text-decoration:none;transition:color .25s}
+.navlinks a:hover{color:var(--ink)}
+@media (max-width:760px){.navlinks .opt{display:none}}
 
-  .rule{
-    height:1px; background:var(--line);
-    margin:clamp(26px,5vh,52px) 0 clamp(22px,3.5vh,34px);
-    transform-origin:left;
-  }
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding-block:104px clamp(40px,7vh,84px)}
+.eyebrow{margin:0 0 clamp(20px,3vh,32px);font-size:.78rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ink-2);line-height:1.7}
+.pip{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);
+  margin-right:12px;vertical-align:middle;
+  box-shadow:0 0 0 0 rgba(255,106,61,.5);animation:pip 3s ease-out infinite}
+@keyframes pip{70%{box-shadow:0 0 0 10px rgba(255,106,61,0)}100%{box-shadow:0 0 0 0 rgba(255,106,61,0)}}
 
-  .lede{
-    margin:0;
-    max-width:31ch;
-    font-size:clamp(1.15rem,2.6vw,1.7rem);
-    font-weight:500;
-    line-height:1.32;
-    letter-spacing:-.015em;
-    color:var(--ink);
-  }
-  .lede span{color:var(--muted)}
+h1{margin:0;font-size:clamp(4.2rem,17vw,13.5rem);font-weight:800;letter-spacing:-.05em;line-height:.82;
+  background:linear-gradient(98deg,var(--ink) 0%,var(--ink) 40%,var(--accent-2) 72%,var(--accent) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-lede{margin:clamp(26px,4vh,44px) 0 0;max-width:40ch;
+  font-size:clamp(1.15rem,2.3vw,1.6rem);font-weight:500;line-height:1.35;letter-spacing:-.015em}
+.hero-lede em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent-2);font-size:1.1em}
 
-  .actions{margin-top:clamp(30px,5vh,48px)}
+/* social row */
+.socials{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:clamp(28px,4vh,44px)}
+.cta{display:inline-flex;align-items:center;gap:11px;padding:14px 22px;border-radius:999px;
+  text-decoration:none;font-size:.94rem;font-weight:600;letter-spacing:.01em;
+  background:linear-gradient(120deg,var(--accent) 0%,#ff8a4d 100%);color:#120602;
+  box-shadow:0 10px 34px -12px rgba(255,106,61,.75);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 40px -12px rgba(255,106,61,.9)}
+.cta svg{width:17px;height:17px;fill:currentColor}
+.cta .arw{transition:transform .25s var(--ease)}
+.cta:hover .arw{transform:translateX(4px)}
 
-  .btn{
-    display:inline-flex; align-items:center; gap:11px;
-    padding:13px 22px 13px 20px;
-    border:1px solid var(--line);
-    border-radius:999px;
-    color:var(--ink); text-decoration:none;
-    font-size:.94rem; font-weight:500; letter-spacing:.01em;
-    background:rgba(244,242,239,.03);
-    backdrop-filter:blur(6px);
-    transition:border-color .25s ease, background .25s ease, transform .25s ease, color .25s ease;
-  }
-  .btn svg{width:17px; height:17px; fill:currentColor; opacity:.85; transition:opacity .25s ease}
-  .btn .arrow{margin-left:2px; opacity:.45; transition:transform .25s ease, opacity .25s ease}
-  .btn:hover,.btn:focus-visible{
-    border-color:rgba(255,106,61,.65);
-    background:rgba(255,106,61,.09);
-    transform:translateY(-2px);
-  }
-  .btn:hover .arrow,.btn:focus-visible .arrow{transform:translateX(4px); opacity:1}
-  .btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px}
+.icon{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;
+  border:1px solid var(--line);border-radius:999px;color:var(--ink-2);
+  background:rgba(245,243,240,.03);backdrop-filter:blur(6px);
+  transition:color .25s,border-color .25s,background .25s,transform .25s var(--ease)}
+.icon svg{width:17px;height:17px;fill:currentColor}
+.icon:hover{color:var(--ink);border-color:rgba(255,106,61,.6);background:rgba(255,106,61,.10);transform:translateY(-2px)}
 
-  footer{
-    border-top:1px solid var(--line);
-    padding-top:20px;
-  }
-  footer a{color:var(--muted); text-decoration:none; transition:color .2s ease}
-  footer a:hover{color:var(--ink)}
+.scroll{margin-top:clamp(30px,5vh,58px);display:inline-flex;align-items:center;gap:12px;
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);text-decoration:none}
+.scroll i{display:block;width:34px;height:1px;background:var(--ink-3);position:relative;overflow:hidden}
+.scroll i::after{content:"";position:absolute;inset:0;background:var(--accent);
+  transform:translateX(-100%);animation:sweepline 2.6s var(--ease) infinite}
+@keyframes sweepline{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
 
-  /* ---- entrance ---- */
-  .rise{opacity:0; transform:translateY(18px); animation:rise .9s cubic-bezier(.22,.65,.24,1) forwards}
-  .d1{animation-delay:.05s}.d2{animation-delay:.16s}.d3{animation-delay:.3s}
-  .d4{animation-delay:.42s}.d5{animation-delay:.54s}.d6{animation-delay:.66s}
-  @keyframes rise{to{opacity:1; transform:none}}
-  .sweep{transform:scaleX(0); animation:sweep .9s cubic-bezier(.22,.65,.24,1) .34s forwards}
-  @keyframes sweep{to{transform:scaleX(1)}}
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+section{padding:clamp(84px,13vh,160px) 0;position:relative}
+.rule{height:1px;background:var(--line-2);border:0;margin:0}
 
-  @media (prefers-reduced-motion:reduce){
-    .rise,.sweep,.glow,.dot{animation:none}
-    .rise{opacity:1; transform:none}
-    .sweep{transform:none}
-    .btn,.btn .arrow{transition:none}
-  }
+.label{margin:0 0 clamp(26px,4vh,44px);font-size:.74rem;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--ink-3);display:flex;align-items:baseline;gap:14px}
+.label b{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
 
-  @media (max-width:520px){
-    header,footer{font-size:.7rem}
-    .lede{max-width:24ch}
-  }
+h2{margin:0;font-size:clamp(2rem,5vw,3.6rem);font-weight:700;letter-spacing:-.035em;line-height:1.02}
+h2 em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent-2)}
+
+.prose{max-width:62ch;font-size:clamp(1.02rem,1.5vw,1.2rem);line-height:1.62;color:var(--ink-2)}
+.prose p{margin:0 0 1.1em}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--ink);font-weight:600}
+
+.two{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,90px);align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:34px}}
+
+/* practice cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1px;
+  background:var(--line-2);border:1px solid var(--line-2);border-radius:16px;overflow:hidden}
+.card{background:linear-gradient(180deg,rgba(245,243,240,.028),rgba(245,243,240,.012));
+  padding:clamp(24px,3vw,34px);transition:background .35s var(--ease)}
+.card:hover{background:linear-gradient(180deg,rgba(255,106,61,.09),rgba(255,106,61,.02))}
+.card h3{margin:0 0 12px;font-size:1.06rem;font-weight:600;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.card h3 span{width:5px;height:5px;border-radius:50%;background:var(--accent);flex:none}
+.card p{margin:0;font-size:.94rem;line-height:1.6;color:var(--ink-2)}
+
+/* marks / highlights */
+.marks{list-style:none;margin:0;padding:0;border-block:1px solid var(--line-2)}
+.marks li{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,4vw,44px);
+  align-items:baseline;padding:clamp(20px,2.6vw,30px) 0;
+  border-top:1px solid var(--line-2);transition:background .3s}
+.marks li:first-child{border-top:0}
+.marks li:hover{background:rgba(245,243,240,.03)}
+.marks .yr{font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--accent);min-width:5.5ch}
+.marks .txt{font-size:clamp(1rem,1.7vw,1.2rem);font-weight:500;letter-spacing:-.012em;line-height:1.45}
+.marks .txt small{display:block;margin-top:6px;font-size:.88rem;font-weight:400;color:var(--ink-3);letter-spacing:0}
+
+/* company strip */
+.firms{display:flex;flex-wrap:wrap;gap:10px 12px;padding:0;margin:0;list-style:none}
+.firms li{font-size:.82rem;letter-spacing:.06em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:999px;padding:9px 16px;
+  transition:color .25s,border-color .25s}
+.firms li:hover{color:var(--ink);border-color:rgba(255,106,61,.5)}
+
+/* off-duty */
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.facts li{display:grid;grid-template-columns:5px 1fr;gap:14px;
+  font-size:1rem;color:var(--ink-2);line-height:1.55}
+.facts li::before{content:"";width:5px;height:5px;border-radius:50%;
+  background:var(--accent);margin-top:.62em}
+.facts b{color:var(--ink);font-weight:600}
+
+/* contact */
+.contact h2{max-width:16ch}
+.contact .socials{margin-top:clamp(30px,5vh,46px)}
+
+/* footer */
+footer{padding:36px 0 44px;border-top:1px solid var(--line-2)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.foot a{text-decoration:none;transition:color .25s}
+.foot a:hover{color:var(--ink)}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+.rise{opacity:0;transform:translateY(22px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rise.in{opacity:1;transform:none}
+.rise[data-d="1"]{transition-delay:.08s}
+.rise[data-d="2"]{transition-delay:.16s}
+.rise[data-d="3"]{transition-delay:.26s}
+.rise[data-d="4"]{transition-delay:.36s}
+.rise[data-d="5"]{transition-delay:.46s}
+
+@media (max-width:520px){
+  .socials{gap:10px}
+  .socials .cta{flex:1 0 100%;justify-content:center}
+  .icon{width:44px;height:44px}
+  .eyebrow{letter-spacing:.18em}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rise{opacity:1;transform:none;transition:none}
+  .pip,.scroll i::after{animation:none}
+  *{transition-duration:.01ms!important}
+}
 </style>
 </head>
 <body>
-  <div class="glow" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
 
-  <div class="page">
-    <header class="rise d1">
-      <span class="mark">jasvind.com</span>
-      <span><span class="dot" aria-hidden="true"></span>Singapore</span>
-    </header>
+<!-- WebGL stage: one fullscreen quad, one fragment shader, no libraries -->
+<div class="stage" aria-hidden="true"><canvas id="gl"></canvas></div>
+<div class="veil" aria-hidden="true"></div>
 
-    <main>
-      <p class="eyebrow rise d2">Marketing &amp; Communications</p>
+<div class="shell">
 
-      <h1 class="rise d3">Jasvind</h1>
+  <nav class="nav" id="nav">
+    <a class="brand" href="#top"><em>J</em>asvind</a>
+    <div class="navlinks">
+      <a class="opt" href="#work">Practice</a>
+      <a class="opt" href="#marks">Track record</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-      <div class="rule sweep" aria-hidden="true"></div>
+  <main id="main">
 
-      <p class="lede rise d4">
-        I build brands and campaigns in asset management —
-        <span>funds, launches and the stories that make them land.</span>
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <header class="hero wrap" id="top">
+      <p class="eyebrow rise" data-d="1"><span class="pip"></span>Singapore &nbsp;·&nbsp; Marketing &amp; Communications</p>
+
+      <h1 class="rise" data-d="2">Jasvind</h1>
+
+      <p class="hero-lede rise" data-d="3">
+        I build brands, campaigns and growth engines in asset management — <em>funds, ETFs and digital platforms,</em> and the stories that make people care about them.
       </p>
 
-      <div class="actions rise d5">
-        <a class="btn" href="https://www.linkedin.com/in/jasvind/" target="_blank" rel="noopener noreferrer">
+      <div class="socials rise" data-d="4">
+        <a class="cta" href="https://www.linkedin.com/in/jasvind" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-          Connect on LinkedIn
-          <span class="arrow" aria-hidden="true">→</span>
+          Connect on LinkedIn <span class="arw" aria-hidden="true">→</span>
+        </a>
+        <a class="icon" href="https://www.instagram.com/iamjasvind" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.39C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.12.66.67 1.33 1.09 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.39.67-.66 1.09-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.39-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+        </a>
+        <a class="icon" href="https://x.com/jasvind" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.68l7.73-8.84L1.25 2.25h6.82l4.71 6.23 5.46-6.23zm-1.16 17.52h1.83L7.05 4.13H5.08l12 15.64z"/></svg>
+        </a>
+        <a class="icon" href="https://www.facebook.com/jasvind" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
         </a>
       </div>
-    </main>
 
-    <footer class="rise d6">
+      <a class="scroll rise" data-d="5" href="#about"><i aria-hidden="true"></i>Scroll</a>
+    </header>
+
+    <!-- ── ABOUT ────────────────────────────────────────── -->
+    <section id="about" class="wrap">
+      <div class="two">
+        <div>
+          <p class="label rise"><b>01</b> Introduction</p>
+          <h2 class="rise" data-d="1">Growth, brand and the <em>regulated craft</em> of talking about money.</h2>
+        </div>
+        <div class="prose rise" data-d="2">
+          <p>I lead marketing and communications for a Singapore asset manager — <strong>brand, performance, digital and content</strong> across institutional, intermediary and retail audiences.</p>
+          <p>Most of my work sits where three things meet: commercial growth, creative storytelling, and the compliance reality of a MAS-regulated industry. Fund launches and ETF listings. Campaigns that have to convert and pass review. Executive communications that need to sound like a person.</p>
+          <p>Before asset management I ran growth across nine APAC markets in e-commerce, food tech and brokerage — building performance teams from scratch, and learning that a good campaign is mostly arithmetic wearing nice clothes.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- ── PRACTICE ─────────────────────────────────────── -->
+    <section id="work" class="wrap">
+      <p class="label rise"><b>02</b> Practice</p>
+      <div class="grid">
+        <article class="card rise" data-d="1">
+          <h3><span></span>Growth &amp; Performance</h3>
+          <p>Paid search, social, app and programmatic across APAC. Full-funnel acquisition, attribution frameworks, and the unglamorous discipline of cost per outcome.</p>
+        </article>
+        <article class="card rise" data-d="2">
+          <h3><span></span>Brand &amp; Communications</h3>
+          <p>Fund launches, media relations, thought leadership, client events and webinars, executive and internal communications.</p>
+        </article>
+        <article class="card rise" data-d="3">
+          <h3><span></span>Regulated Marketing</h3>
+          <p>Investment product marketing built to MAS guidelines — prospectus to placemat to landing page, with a structured review cycle that keeps it current.</p>
+        </article>
+        <article class="card rise" data-d="4">
+          <h3><span></span>AI &amp; Automation</h3>
+          <p>Designing internal agents and automated workflows that compress content production from weeks into days, without losing the house voice.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- ── TRACK RECORD ─────────────────────────────────── -->
+    <section id="marks" class="wrap">
+      <p class="label rise"><b>03</b> Track record</p>
+      <ul class="marks">
+        <li class="rise"><span class="yr">Today</span><span class="txt">Head of Marketing &amp; Communications, asset management<small>Singapore — institutional, intermediary and retail</small></span></li>
+        <li class="rise" data-d="1"><span class="yr">2026</span><span class="txt">Took an SGX-listed ETF from concept to listing<small>Positioning, launch campaign and distribution narrative</small></span></li>
+        <li class="rise" data-d="2"><span class="yr">2024</span><span class="txt">Rebuilt content operations around AI agents<small>Weeks of production compressed into days</small></span></li>
+        <li class="rise" data-d="3"><span class="yr">2021</span><span class="txt">Built a regional performance marketing team from zero<small>Nine APAC markets, app growth and CAC efficiency</small></span></li>
+        <li class="rise" data-d="4"><span class="yr">2012</span><span class="txt">Started in financial marketing, and never really left<small>Brokerage and CFDs, then e-commerce, then funds</small></span></li>
+      </ul>
+
+      <p class="label rise" style="margin-top:clamp(48px,7vh,80px)"><b>04</b> Where I've worked</p>
+      <ul class="firms rise" data-d="1">
+        <li>UOB Asset Management</li><li>CloudKitchens</li><li>Flash Coffee</li>
+        <li>Lazada</li><li>Chope</li><li>PhillipCapital</li>
+      </ul>
+    </section>
+
+    <hr class="rule">
+
+    <!-- ── OFF DUTY ─────────────────────────────────────── -->
+    <section id="beyond" class="wrap">
+      <div class="two">
+        <div>
+          <p class="label rise"><b>05</b> Off the clock</p>
+          <h2 class="rise" data-d="1">A few things that <em>aren't</em> on the CV.</h2>
+        </div>
+        <ul class="facts rise" data-d="2">
+          <li><span><b>Engineer first.</b> B.Eng (Hons) in Electrical Engineering, NUS — with a year in Stockholm on the NUS Overseas College programme.</span></li>
+          <li><span><b>Founded <a style="color: #eb0028;background-color: #FFF; padding: 5px; border-radius: 7px;" href="https://www.ted.com/tedx/events/724">TEDx<span lang="sv">Mälaren</span></a></b> in Sweden, Stockholm's first TEDx event.</span></li>
+          <li><span><b>Still writes his own code.</b> Landing pages, tracking, dashboards — including this page.</span></li>
+          <li><span><b>Camera person.</b> Photography and visual storytelling, mostly for the pleasure of the frame.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <!-- ── CONTACT ──────────────────────────────────────── -->
+    <section id="contact" class="wrap contact">
+      <p class="label rise"><b>06</b> Contact</p>
+      <h2 class="rise" data-d="1">Let's <em>talk shop.</em></h2>
+      <p class="prose rise" data-d="2" style="margin-top:22px">Open to conversations about marketing in asset management, AI in content operations, and the odd good idea. LinkedIn is the fastest way to reach me.</p>
+
+      <div class="socials rise" data-d="3">
+        <a class="cta" href="https://www.linkedin.com/in/jasvind" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          Connect on LinkedIn <span class="arw" aria-hidden="true">→</span>
+        </a>
+        <a class="icon" href="https://www.instagram.com/iamjasvind" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.39C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.12.66.67 1.33 1.09 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.39.67-.66 1.09-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.39-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+        </a>
+        <a class="icon" href="https://x.com/jasvind" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.68l7.73-8.84L1.25 2.25h6.82l4.71 6.23 5.46-6.23zm-1.16 17.52h1.83L7.05 4.13H5.08l12 15.64z"/></svg>
+        </a>
+        <a class="icon" href="https://www.facebook.com/jasvind" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.96h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap foot">
       <span>&copy; <span id="yr">2026</span> Jasvind</span>
-    </footer>
-  </div>
+      <span>Singapore</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- year ---------- */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---------- sticky nav ---------- */
+  var nav = document.getElementById('nav'), ticking = false;
+  addEventListener('scroll', function () {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () {
+      nav.classList.toggle('stuck', scrollY > 40); ticking = false;
+    });
+  }, { passive: true });
+
+  /* ---------- reveal on scroll ---------- */
+  var risers = document.querySelectorAll('.rise');
+  if (reduce || !('IntersectionObserver' in window)) {
+    risers.forEach(function (n) { n.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+    risers.forEach(function (n) { io.observe(n); });
+  }
+
+  /* ==========================================================
+     WEBGL BACKDROP
+     One fullscreen triangle. One fragment shader. Zero libraries.
+     Domain-warped fBm → molten copper caustics over obsidian.
+     ========================================================== */
+  var canvas = document.getElementById('gl');
+  var gl = canvas.getContext('webgl', {
+    alpha: false, antialias: false, depth: false, stencil: false,
+    powerPreference: 'low-power', preserveDrawingBuffer: false
+  }) || canvas.getContext('experimental-webgl');
+  if (!gl) return; // CSS gradient fallback stays visible
+
+  var VERT =
+    'attribute vec2 p;void main(){gl_Position=vec4(p,0.0,1.0);}';
+
+  var FRAG = [
+    'precision mediump float;',
+    'uniform vec2 u_res;uniform float u_t;uniform vec2 u_m;',
+    'float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}',
+    'float noise(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.0-2.0*f);',
+    '  return mix(mix(hash(i),hash(i+vec2(1.0,0.0)),u.x),',
+    '             mix(hash(i+vec2(0.0,1.0)),hash(i+vec2(1.0,1.0)),u.x),u.y);}',
+    'float fbm(vec2 p){float v=0.0,a=0.5;mat2 m=mat2(1.6,1.2,-1.2,1.6);',
+    '  for(int i=0;i<5;i++){v+=a*noise(p);p=m*p;a*=0.5;}return v;}',
+    'void main(){',
+    '  vec2 uv=(gl_FragCoord.xy-0.5*u_res)/u_res.y;',
+    '  float t=u_t*0.045;',
+    // two-pass domain warp — the "liquid" of the liquid metal
+    '  vec2 q=vec2(fbm(uv*1.35+t),fbm(uv*1.35+vec2(5.2,1.3)-t));',
+    '  vec2 r=vec2(fbm(uv*1.35+2.6*q+vec2(1.7,9.2)+t*1.4),',
+    '              fbm(uv*1.35+2.6*q+vec2(8.3,2.8)-t*1.2));',
+    '  float f=fbm(uv*1.35+2.8*r);',
+    // palette: obsidian → ember → copper → gold
+    '  vec3 ink=vec3(0.029,0.029,0.037);',
+    '  vec3 ember=vec3(0.155,0.052,0.028);',
+    '  vec3 copper=vec3(0.86,0.36,0.20);',
+    '  vec3 gold=vec3(1.0,0.706,0.361);',
+    '  vec3 col=mix(ink,ember,smoothstep(0.36,0.84,f));',
+    '  col=mix(col,copper,smoothstep(0.68,0.98,f)*0.52);',
+    '  col=mix(col,gold,pow(smoothstep(0.82,1.02,f),2.4)*0.36);',
+    // a cool counterweight so it does not read as one flat orange
+    '  col+=vec3(0.05,0.06,0.13)*smoothstep(0.55,0.0,f)*length(r);',
+    // cursor warmth
+    '  vec2 mp=(u_m-0.5*u_res)/u_res.y;',
+    '  col+=copper*0.10*exp(-7.0*dot(uv-mp,uv-mp));',
+    // slow breathing + vignette + dither (kills banding on dark gradients)
+    '  col*=0.92+0.08*sin(u_t*0.18);',
+    '  col*=1.0-0.62*smoothstep(0.30,1.15,length(uv*vec2(0.80,1.0)));',
+    '  col+=(hash(gl_FragCoord.xy+u_t)-0.5)*0.012;',
+    '  gl_FragColor=vec4(col,1.0);}'
+  ].join('\n');
+
+  function compile(type, src) {
+    var s = gl.createShader(type);
+    gl.shaderSource(s, src); gl.compileShader(s);
+    return gl.getShaderParameter(s, gl.COMPILE_STATUS) ? s : null;
+  }
+  var vs = compile(gl.VERTEX_SHADER, VERT), fs = compile(gl.FRAGMENT_SHADER, FRAG);
+  if (!vs || !fs) return;
+
+  var prog = gl.createProgram();
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return;
+  gl.useProgram(prog);
+
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+  var loc = gl.getAttribLocation(prog, 'p');
+  gl.enableVertexAttribArray(loc);
+  gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+
+  var uRes = gl.getUniformLocation(prog, 'u_res'),
+      uT   = gl.getUniformLocation(prog, 'u_t'),
+      uM   = gl.getUniformLocation(prog, 'u_m');
+
+  // Render below native resolution and let the GPU upscale — the visual is
+  // low-frequency, so 55–65% costs nothing visually and buys a lot of frames.
+  var SCALE = 0.6, DPR_CAP = 1.5, mouse = [0, 0], w = 0, h = 0;
+
+  function resize() {
+    var dpr = Math.min(devicePixelRatio || 1, DPR_CAP) * SCALE;
+    w = Math.max(1, Math.floor(innerWidth * dpr));
+    h = Math.max(1, Math.floor(innerHeight * dpr));
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width = w; canvas.height = h;
+      gl.viewport(0, 0, w, h);
+    }
+    gl.uniform2f(uRes, w, h);
+    mouse = [w * 0.5, h * 0.62];
+  }
+
+  var rt;
+  addEventListener('resize', function () {
+    clearTimeout(rt); rt = setTimeout(function () { resize(); if (reduce) frame(0); }, 140);
+  }, { passive: true });
+
+  if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    addEventListener('pointermove', function (e) {
+      var dpr = Math.min(devicePixelRatio || 1, DPR_CAP) * SCALE;
+      mouse[0] = e.clientX * dpr;
+      mouse[1] = h - e.clientY * dpr;
+    }, { passive: true });
+  }
+
+  var start = performance.now(), running = false, raf = 0, last = 0;
+  // The motion is low-frequency, so 30fps is indistinguishable from 60
+  // and halves GPU work. Laptops on battery notice; eyes do not.
+  var STEP = 1000 / 30;
+
+  function frame(now) {
+    if (running) raf = requestAnimationFrame(frame);
+    if (running && now - last < STEP) return;
+    last = now;
+    gl.uniform1f(uT, (now - start) * 0.001);
+    gl.uniform2f(uM, mouse[0], mouse[1]);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  function play()  { if (!running && !reduce) { running = true; raf = requestAnimationFrame(frame); } }
+  function pause() { running = false; cancelAnimationFrame(raf); }
+
+  resize();
+
+  if (reduce) {
+    frame(start); // one static, beautiful frame — no loop, no battery cost
+  } else {
+    play();
+    // Stop painting when the tab is hidden or the canvas is scrolled past.
+    document.addEventListener('visibilitychange', function () {
+      document.hidden ? pause() : play();
+    });
+    // Lose the context gracefully rather than crashing the page.
+    canvas.addEventListener('webglcontextlost', function (e) { e.preventDefault(); pause(); });
+    canvas.addEventListener('webglcontextrestored', function () { resize(); play(); });
+  }
+})();
+</script>
 </body>
 </html>

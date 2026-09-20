@@ -21,7 +21,8 @@ Responsive CSS
     margin-top: 20px;
   }
   .section-title h2 {
-    font-size: 26px;
+    font-size: 33px;
+	line-height: 1.2;
   }
   .navbar-light .navbar-nav {
     margin-top: 14px;
@@ -138,8 +139,12 @@ Responsive CSS
     padding-top: 35px;
   }
   #getstarted h2 {
-    font-size: 43px;
+    font-size: 33px;
+	line-height: 1.2;
   }
+	#getstarted .section-title p {
+		text-align: left;
+	}
   .get-started-create-account h3 {
     font-size: 25px;
   }
@@ -469,7 +474,7 @@ Responsive CSS
     margin-top: 10px;
   }
   #sg-fundAssetEngine {
-    padding: 75px 0 100px 0;
+    padding: 0px 0 100px 0;
   }
 	/*-----------------*/
 	 .sg-fundAllocation {
@@ -571,6 +576,104 @@ Responsive CSS
 	.riskFeesCard {
 		padding: 42px 20px 10px;
 	}
+	/*--------------------*/
+		.sg-EquitiesResilient {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+
+    padding: 38px 0px;
+  }
+
+
+  .sg-EquitiesResilient-content {
+    width: 100%;
+
+    padding-left: 0;
+  }
+
+
+  .sg-EquitiesResilient-content h3 {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: clamp(
+      27px,
+      calc(5.556vw + 7px),
+      30px
+    );
+
+    line-height: 1.16;
+  }
+
+  .sg-EquitiesResilient-source {
+    max-width: 100%;
+
+    margin-top: 28px;
+
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+
+  .sg-EquitiesResilient-chart {
+    width: 100%;
+
+    padding: 24px 16px 22px;
+
+    border-radius: 14px;
+
+    box-shadow:
+      0 8px 22px rgba(0, 0, 0, 0.14);
+  }
+
+
+  .sg-EquitiesResilient-chart img {
+    width: 100%;
+    max-width: none;
+  }
+	.getStartedCards .col-lg-4 {
+    margin-bottom: 24px;
+  }
+	#fundDocuments .col-lg-4 {
+    margin-bottom: 24px;
+  }
+	#fundDocuments .glass-card img {
+		width: 65px;
+		padding-bottom: 10px;
+	}
+	#fundDocuments {
+	padding: 50px 0;
+}
+	.sg-EquitiesResilient-source {
+		display: none;
+	}
+	.sg-EquitiesResilient-source2 {
+		display: block;
+		font-size: 13px;
+		line-height: 1.45;
+	}
+	.singaporeStoryDisclaimer {
+		text-align: left;
+		padding-top: 20px;
+	}
+	.singaporeStory {
+		padding-bottom: 0px;
+	}
+	.sg-thisFundYourMoney-disclaimer {
+		padding-top: 25px;
+	}
+	.sg-thisFundYourMoney-disclaimer {
+		width: 100%;
+	}
+	#getstarted .glass-card {
+		padding: 20px;
+	}
+	.united-sg-dynamic-income-fund-singapore-story-content ul {
+		padding: 20px 30px;
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ptb-100 {
@@ -606,7 +709,7 @@ Responsive CSS
     text-align: center;
   }
   .main-banner .banner-content h1 {
-    font-size: 115px;
+    font-size: 55px;
   }
   .main-banner .banner-image {
     margin-top: 50px;
@@ -625,10 +728,10 @@ Responsive CSS
     padding-right: 0px;
   }
   .appstore-image-left img {
-    width: 175px;
+    width: 150px;
   }
   .main-banner .logos-fluid {
-    padding-bottom: 35px;
+    padding: 0 25px 35px 25px;
   }
   .main-banner .appstore-image-left {
     margin-bottom: 15px;
@@ -637,7 +740,7 @@ Responsive CSS
     height: 390px;
   }
   #getstarted h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
   #about-united-sg-dynamic-income-fund .container {
     text-align: center;
@@ -756,8 +859,8 @@ Responsive CSS
     flex-basis: 100px;
   }
   .sg-thisFundDifferent-icon img {
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
   }
   .sg-thisFundDifferent-content h3 {
     margin-bottom: 10px;
@@ -902,6 +1005,81 @@ Responsive CSS
     width: 75%;
     max-width: 680px;
   }
+	/*--------------------------------------*/
+	.sg-EquitiesResilient {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 42px;
+
+    padding: 100px 0px 0px 0px;
+  }
+
+
+  .sg-EquitiesResilient-content {
+    padding-left: 0;
+  }
+
+
+  .sg-EquitiesResilient-content h3 {
+    max-width: 720px;
+
+    font-size: 32px;
+    line-height: 1.16;
+  }
+.sg-EquitiesResilient-source {
+    display: none;
+  }
+  .sg-EquitiesResilient-source2 {
+    max-width: 720px;
+	display: block;
+    margin-top: 0px;
+
+    font-size: 13px;
+  }
+
+
+  .sg-EquitiesResilient-chart {
+    width: 100%;
+
+    padding: 44px 48px;
+
+    border-radius: 14px;
+  }
+
+
+  .sg-EquitiesResilient-chart img {
+    max-width: 720px;
+  }
+	.united-sg-dynamic-income-fund-singapore-story-image img {
+		width: 50%;
+		margin: auto 0;
+		padding-bottom: 40px;
+	}
+	.united-sg-dynamic-income-fund-singapore-story-content {
+		padding-left: 0;
+	}
+	#sg-fundAssetEngine {
+		padding: 0 0 100px 0;
+	}
+	.riskFeesCard {
+		margin-top: 30px;
+	}
+	#fundDocuments .glass-card img {
+		width: 90px;
+	}
+	#fundDocuments h3 {
+		font-size: 17px;
+	}
+	.getStartedCards .col-lg-4 {
+    margin-bottom: 24px;
+  }
+	.sg-thisFundYourMoney-disclaimer {
+		padding-top: 25px;
+	}
+	
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .faq-accordion-content .accordion .accordion-title {
@@ -917,8 +1095,11 @@ Responsive CSS
     font-size: 1.6rem;
   }
   .main-banner .banner-content h1 {
-    font-size: 5.4rem;
+    font-size: 3rem;
   }
+	#fundDocuments .glass-card img {
+		width: 100px;
+	}
   /*---------------------------*/
   .sg-strategy {
     padding: 44px 28px 48px;
@@ -999,8 +1180,8 @@ Responsive CSS
     flex-basis: 118px;
   }
   .sg-thisFundDifferent-icon img {
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 85px;
   }
   .sg-thisFundDifferent-content h3 {
     margin-bottom: 12px;
@@ -1025,7 +1206,7 @@ Responsive CSS
   }
   .sg-fundAssetEngine-introCopy h2 {
     margin-bottom: 24px;
-    font-size: 42px;
+    font-size: 40px;
   }
   .sg-fundAssetEngine-introCopy p {
     font-size: 19px;
@@ -1130,6 +1311,63 @@ Responsive CSS
   .sg-fundAllocation-skyline img {
     max-width: 680px;
   }
+  /*-----------------------*/
+	.sg-EquitiesResilient {
+    grid-template-columns: minmax(0, 0.9fr) minmax(500px, 1.1fr);
+
+    gap: 46px;
+
+    padding: 80px 36px 0px 36px;
+  }
+
+
+  .sg-EquitiesResilient-content {
+    padding-left: 0px;
+  }
+
+
+  .sg-EquitiesResilient-content h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+
+  .sg-EquitiesResilient-source {
+    margin-top: 64px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+
+  .sg-EquitiesResilient-chart {
+    padding: 42px 38px;
+
+    border-radius: 14px;
+  }
+	.sgStoryipadPro {
+		width: 100%;
+		margin: auto 0;
+	}
+	.united-sg-dynamic-income-fund-singapore-story-image img {
+		width: 50%;
+		padding-bottom: 50px;
+	}
+	#about-united-sg-dynamic-income-fund h2 {
+		font-size: 40px;
+	}
+	#sg-fundAssetEngine {
+		padding-top: 0;
+	}
+	.united-sg-dynamic-income-fund-singapore-story-content {
+		padding-left: 0;
+	}
+	.sg-EquitiesResilient {
+		padding: 80px 0px 0px 0px;
+	}
+.sg-thisFundYourMoney-disclaimer {
+		padding-top: 25px;
+	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1366px) {
   .faq-accordion-content .accordion .accordion-title {
@@ -1177,6 +1415,12 @@ Responsive CSS
   .sg-fundAssetEngine-introCopy h2 {
     font-size: 33px;
   }
+	.sg-fundAssetEngine-visual img {
+	width: 635px;
+}
+	#sg-fundAssetEngine {
+		padding: 25px 0 100px 0;
+	}
 }
 /* =========================================================
    CAROUSEL ARROWS

@@ -196,7 +196,7 @@ Default CSS
 	color: #ffa666!important;
 }
 .theme-dark #sg-fundAssetEngine {
-	background-color: #35363e;
+	background-color: #000000;
 }
 .theme-dark .sg-fundAssetEngine-card h3 {
 	color: #ffa666!important;
@@ -221,6 +221,24 @@ Default CSS
 	color: #ffa666!important;
 }
 .theme-dark #fund-description h3 {
+  color: #ffa666!important;
+}
+.theme-dark .sg-EquitiesResilient-content h3 {
+	color: #ffa666!important;
+}
+.theme-dark .sg-EquitiesResilient-chart {
+	background-color: #FFF0E6;
+}
+.theme-dark #fundDocuments h2 {
+	color: #ffa666!important;
+}
+.theme-dark #fundDocuments {
+	background-color: #000000;
+}
+.theme-dark #getstarted .card h3 {
+  color: #ffa666!important;
+}
+.theme-dark #getstarted h2 {
   color: #ffa666!important;
 }
 /*# sourceMappingURL=dark.css.map */

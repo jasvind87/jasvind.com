@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 .section-title h2 {
-  font-size: 45px;
+  font-size: 40px;
   margin: 0 0 0 0;
   position: relative;
   line-height: 1;
@@ -600,6 +600,13 @@ Faq Area CSS
 .faq-accordion-content .accordion .accordion-content li {
   padding-bottom: 15px;
 }
+#faq ul {
+	list-style-type: disc;
+	font-size: 17px;
+}
+#faq p, #faq a {
+	font-size: 17px;
+}
 /*================================================
 Team Area CSS
 =================================================*/
@@ -780,11 +787,11 @@ Stripe Pattern
 .aboutDisclaimer {
   text-align: center;
   padding-top: 50px;
-  font-size: 17px;
+  font-size: 13px;
 }
 #fund-description {
   padding: 75px 0 100px 0;
-  background-color: #FFFFFF;
+  background-color: #fffaf2;
 }
 #fund-description h2 {
   font-weight: 400;
@@ -813,7 +820,7 @@ Stripe Pattern
 }
 #getstarted h2 {
   font-weight: 300;
-  font-size: 50px;
+  font-size: 40px;
 }
 #getstarted h4 {
   font-weight: 300;
@@ -909,6 +916,18 @@ Singapore Story
 .singaporeStory {
   text-align: left;
   font-size: 20px;
+  padding-bottom: 50px;
+}
+.united-sg-dynamic-income-fund-singapore-story-content ul {
+  font-size: 20px;
+  padding: 20px 50px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.singaporeStoryDisclaimer {
+	font-size: 13px;
 }
 .united-sg-dynamic-income-fund-singapore-story-image {
   text-align: center;
@@ -940,6 +959,100 @@ Singapore Story
   width: 70%;
   border-bottom: 2px dashed #333333;
   left: 10px;
+}
+/* =========================================================
+   SINGAPORE EQUITIES RESILIENT
+   ========================================================= */
+
+.sg-EquitiesResilient {
+  width: 100%;
+  max-width: 1800px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(600px, 1.15fr);
+
+  align-items: center;
+
+  gap: 80px;
+
+  padding: 100px 0 0 0;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.sg-EquitiesResilient-content {
+  width: 100%;
+}
+
+
+.sg-EquitiesResilient-content h3 {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+
+  letter-spacing: -0.01em;
+}
+
+
+/* =========================================================
+   SOURCE
+   ========================================================= */
+
+.sg-EquitiesResilient-source {
+  max-width: 780px;
+
+  margin: 88px 0 0;
+
+  color: #4a4a4a;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.sg-EquitiesResilient-source2 {
+	display: none;
+}
+
+
+/* =========================================================
+   CHART CONTAINER
+   ========================================================= */
+
+.sg-EquitiesResilient-chart {
+  width: 100%;
+
+  padding: 54px 60px 48px;
+
+  background: #FFFFFF;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.16);
+
+  box-sizing: border-box;
+}
+
+
+.sg-EquitiesResilient-chart img {
+  display: block;
+
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+
+  margin: 0 auto;
 }
 .powerMultiAsset {
   padding-top: 100px;
@@ -1084,6 +1197,13 @@ What This Fund Means For Your Money
   background: #fff0e6;
   border-radius: 28px;
 }
+.sg-thisFundYourMoney-disclaimer {
+	padding-top: 75px;
+	font-size: 13px;
+	width: 75%;
+	margin: auto auto;
+	text-align: center
+}
 /* ===== ICON CIRCLE ===== */
 .sg-thisFundYourMoney-icon {
   position: absolute;
@@ -1101,8 +1221,8 @@ What This Fund Means For Your Money
 }
 .sg-thisFundYourMoney-icon img {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
 }
 /* ===== Headings ===== */
@@ -1187,8 +1307,8 @@ What Makes the United SG Dynamic Income Fund Different
 }
 .sg-thisFundDifferent-icon img {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 105px;
+  height: 105px;
   object-fit: contain;
 }
 /* ===== CONTENT ===== */
@@ -1223,7 +1343,7 @@ How the Fund Invests (The 5-Asset Engine)
 =================================================*/
 #sg-fundAssetEngine {
   background-color: #FFFFFF;
-  padding: 100px 0 100px 0;
+  padding: 65px 0 100px 0;
 }
 /* =========================================================
    FUND ASSET ENGINE
@@ -1279,7 +1399,7 @@ How the Fund Invests (The 5-Asset Engine)
 }
 .sg-fundAssetEngine-visual img {
   display: block;
-  width: 100%;
+  width: 700px;
   height: auto;
   object-fit: contain;
   object-position: right bottom;
@@ -1374,6 +1494,8 @@ FUND ALLOCATION
 =================================================*/
 #sg-fundAllocation {
   background: #ffffff;
+  padding-top: 100px;
+  background-color: #fffaf2;
 }
 .sg-fundAllocation {
   width: 100%;
@@ -1608,6 +1730,20 @@ FUND ALLOCATION
   position: relative;
   z-index: 1;
 }
+#fundDocuments {
+	padding: 100px 0;
+}
+/* Image */
+#fundDocuments .glass-card img {
+	margin: 0 auto;
+	width: 130px;
+	padding-bottom: 25px;
+}
+#getstarted .glass-card img {
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 25px;
+}
 /* Icon container */
 .glass-card .num {
   width: 52px;
@@ -1659,11 +1795,14 @@ FUND ALLOCATION
 td.num, th.num {
   text-align: right;
 }
-#understand6percent h3 {
+#fundDocuments {
+	background-color: #FFFFFF;
+}
+#fundDocuments h3 {
   font-size: 22px;
 	text-align: center;
 }
-#understand6percent .card {
+#fundDocuments .card {
   height: 100%;
 }
 .sixPercentIllustrations {
@@ -1773,6 +1912,7 @@ td.num, th.num {
 }
 #getstarted .card h3 {
   font-size: 18px;
+  color: #ffa666;
 }
 .getStartedCards {
   margin-bottom: 40px;
