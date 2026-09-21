@@ -636,6 +636,9 @@ Responsive CSS
   .trainImage img {
     margin-bottom: -8px;
   }
+	.singaporeStory2 {
+  padding-bottom: 10px;
+}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ptb-100 {

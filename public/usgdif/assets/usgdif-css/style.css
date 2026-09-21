@@ -917,6 +917,11 @@ Singapore Story
 .singaporeStory {
   text-align: left;
   font-size: 20px;
+  padding-bottom: 0px;
+}
+.singaporeStory2 {
+  text-align: left;
+  font-size: 20px;
   padding-bottom: 50px;
 }
 .united-sg-dynamic-income-fund-singapore-story-content ul {
